@@ -1,0 +1,6 @@
+"Taxa","Cytokines","cooccurrence_Non-HIV","cooccurrence_Pre-HIV","cor_Non-HIV","cor_Pre-HIV","diff_cor","sign","p"
+"gut s__Ruminococcus_sp._FMBCY1","ratio",105,58,0.035,-0.443,0.479,"Pre-HIV-",0.00220982038771744
+"gut s__Blautia_sp._OF03_15BH","cd163",151,86,0.041,-0.31,0.351,"Pre-HIV-",0.00840625843247444
+"gut s__Prevotella_sp._P4_67","crp",84,52,-0.069,0.402,0.47,"Pre-HIV+",0.00631686827767841
+"oral s__Haemophilus_sp._Marseille_Q0026","lbp",103,53,0.02,-0.432,0.453,"Pre-HIV-",0.00529841508262896
+"oral s__Candidatus_Nanosynbacter_sp._TM7_053","cd163",96,58,-0.066,0.429,0.495,"Pre-HIV+",0.0020427801793903
