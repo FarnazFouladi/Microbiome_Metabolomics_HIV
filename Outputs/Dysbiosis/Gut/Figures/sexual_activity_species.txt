@@ -1,0 +1,15 @@
+s__Adlercreutzia_equolifaciens
+s__Bacteroides_uniformis
+s__Bacteroides_xylanisolvens
+s__Blautia_ammoniilytica
+s__Blautia_stercoris
+s__Dorea_sp._AM58_8
+s__Ellagibacter_isourolithinifaciens
+s__Klebsiella_pneumoniae
+s__Phascolarctobacterium_sp._Marseille_Q4147
+s__Prevotella_copri
+s__Prevotella_hominis
+s__Prevotella_sp._P5_64
+s__Prevotella_stercorea
+s__Ruminococcus_sp._Marseille_P6503
+s__Senegalimassilia_anaerobia

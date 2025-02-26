@@ -1,0 +1,7 @@
+s__Actinomyces_sp._ICM58
+s__Actinomyces_sp._ph3
+s__Alloprevotella_sp._oral_taxon_473
+s__Candidatus_Nanosynbacter_sp._TM7_075
+s__Granulicatella_sp._HMSC30F09
+s__Lachnoanaerobaculum_saburreum
+s__Rothia_sp._HMSC072B04
