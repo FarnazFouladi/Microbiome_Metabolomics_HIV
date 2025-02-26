@@ -1,5 +1,5 @@
 # Set your working directory
-# setwd("~/HIV_Microbiome_2025")
+# setwd("~/Microbiome_Metabolomics_HIV")
 
 ##############################################
 #Prepare data for the down-stream analysis
