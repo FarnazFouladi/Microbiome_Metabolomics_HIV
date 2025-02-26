@@ -1,0 +1,166 @@
+accession,Compound_name,name,smiles,kingdom,super_class,class,sub_class,direct_parent
+HMDB0302405,4-Methylpyridine,4-Methylpyridine,CC1=CC=NC=C1,Organic compounds,Organoheterocyclic compounds,Pyridines and derivatives,Methylpyridines,Methylpyridines
+HMDB0013751,2-Hydroxypyridine,2-Hydroxypyridine,OC1=CC=CC=N1,Organic compounds,Organoheterocyclic compounds,Pyridines and derivatives,Hydropyridines,Pyridinones
+HMDB0011749,2-Piperidinone,2-Piperidinone,O=C1CCCCN1,Organic compounds,Organoheterocyclic compounds,Piperidines,Piperidinones,Piperidinones
+HMDB0031604,2-Penten-1-ol,(E)-2-Penten-1-ol,CC\C=C/CO,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Alcohols and polyols,Primary alcohols
+HMDB0245980,3-Pyridinemethanol,3-Pyridinemethanol,OCC1=CC=CN=C1,Organic compounds,Organoheterocyclic compounds,Pyridines and derivatives,NA,Pyridines and derivatives
+HMDB0246022,3,4-Diaminopyridine,3,4-Diaminopyridine,NC1=CNC=CC1=N,Organic compounds,Organoheterocyclic compounds,Pyridines and derivatives,Aminopyridines and derivatives,Aminopyridines and derivatives
+HMDB0253411,Imexon,Imexon,NC1=NC(=O)N2CC12,Organic compounds,Organoheterocyclic compounds,Diazines,Pyrimidines and pyrimidine derivatives,Pyrimidones
+HMDB0000162,Proline,L-Proline,OC(=O)[C@@H]1CCCN1,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Proline and derivatives
+HMDB0243969,1-Nitrosopiperazine,1-Nitrosopiperazine,O=NN1CCNCC1,Organic compounds,Organoheterocyclic compounds,Diazinanes,Piperazines,Piperazines
+HMDB0000883,Valine,L-Valine,CC(C)[C@H](N)C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Valine and derivatives
+HMDB0031502,4-Hexen-1-ol,(E)-4-Hexen-1-ol,C\C=C/CCCO,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty alcohols,Fatty alcohols
+HMDB0033910,Acetophenone,Acetophenone,CC(=O)C1=CC=CC=C1,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Carbonyl compounds,Alkyl-phenylketones
+HMDB0000262,Thymine,Thymine,CC1=CNC(=O)NC1=O,Organic compounds,Organoheterocyclic compounds,Diazines,Pyrimidines and pyrimidine derivatives,Hydroxypyrimidines
+HMDB0040582,1-Methyl-2-pyrrolecarboxaldehyde,1-Methyl-2-pyrrolecarboxaldehyde,CN1C=CC=C1C=O,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Carbonyl compounds,Aryl-aldehydes
+HMDB0000267,Pyroglutamic acid,Pyroglutamic acid,OC(=O)[C@@H]1CCC(=O)N1,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Alpha amino acids and derivatives
+HMDB0034244,Isoquinoline,Isoquinoline,C1=CC=C2C=NC=CC2=C1,Organic compounds,Organoheterocyclic compounds,Isoquinolines and derivatives,NA,Isoquinolines and derivatives
+HMDB0000064,Creatine,Creatine,CN(CC(O)=O)C(N)=N,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Alpha amino acids and derivatives
+HMDB0061918,1,3-Dihydro-(2H)-indol-2-one,1,3-Dihydro-(2H)-indol-2-one,O=C1CC2=CC=CC=C2N1,Organic compounds,Organoheterocyclic compounds,Indoles and derivatives,Indolines,Indolines
+HMDB0000562,Creatinine,Creatinine,CN1CC(=O)NC1=N,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Alpha amino acids and derivatives
+HMDB0000034,Adenine,Adenine,NC1=C2NC=NC2=NC=N1,Organic compounds,Organoheterocyclic compounds,Imidazopyrimidines,Purines and purine derivatives,6-aminopurines
+HMDB0038998,3,5,7-Octatriyn-1-ol,3,5,7-Octatriyn-1-ol,OCCC#CC#CC#C,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty alcohols,Fatty alcohols
+HMDB0060503,Protoanemonin,Protoanemonin,C=C1OC(=O)C=C1,Organic compounds,Organoheterocyclic compounds,Dihydrofurans,Furanones,Butenolides
+HMDB0004827,Proline betaine,Proline betaine,C[N+]1(C)CCC[C@H]1C([O-])=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Proline and derivatives
+HMDB0246595,4,1-Benzoxazepine,4,1-Benzoxazepine,O1C=CN=C2C=CC=CC2=C1,Organic compounds,Organoheterocyclic compounds,Benzoxazepines,NA,Benzoxazepines
+HMDB0001161,4-Trimethylammoniobutanoic acid,4-Trimethylammoniobutanoic acid,C[N+](C)(C)CCCC([O-])=O,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty acids and conjugates,Straight chain fatty acids
+HMDB0000070,Pipecolic acid,Pipecolic acid,OC(=O)C1CCCCN1,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Alpha amino acids
+HMDB0032538,Triethanolamine,Triethanolamine,OCCN(CCO)CCO,Organic compounds,Organic nitrogen compounds,Organonitrogen compounds,Amines,1,2-aminoalcohols
+HMDB0000132,Guanine,Guanine,NC1=NC(=O)C2=C(N1)N=CN2,Organic compounds,Organoheterocyclic compounds,Imidazopyrimidines,Purines and purine derivatives,Purines and purine derivatives
+HMDB0247055,6-Ethyl-3-hydroxy-2-methyl-4-pyrone,6-Ethyl-3-hydroxy-2-methyl-4-pyrone,CCC1=CC(=O)C(O)=C(C)O1,Organic compounds,Organoheterocyclic compounds,Pyrans,Pyranones and derivatives,Pyranones and derivatives
+HMDB0252816,Glutarimide,Glutarimide,O=C1CCCC(=O)N1,Organic compounds,Organoheterocyclic compounds,Pyridines and derivatives,Hydropyridines,Tetrahydropyridines
+HMDB0000177,Histidine,L-Histidine,N[C@@H](CC1=CN=CN1)C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Histidine and derivatives
+HMDB0000062,Carnitine,L-Carnitine,C[N+](C)(C)C[C@H](O)CC(O)=O,Organic compounds,Organic nitrogen compounds,Organonitrogen compounds,Quaternary ammonium salts,Carnitines
+HMDB0001934,Nicotine,Nicotine,[H][C@]1(CCCN1C)C1=CC=CN=C1,Organic compounds,Organoheterocyclic compounds,Pyridines and derivatives,Pyrrolidinylpyridines,Pyrrolidinylpyridines
+HMDB0000205,Phenylpyruvic acid,Phenylpyruvic acid,OC(=O)C(=O)CC1=CC=CC=C1,Organic compounds,Benzenoids,Benzene and substituted derivatives,Phenylpyruvic acid derivatives,Phenylpyruvic acid derivatives
+HMDB0255997,Oxonal,Oxonal,O=C\C1=C\C=C/C=C\C=C/O1,NA,NA,NA,NA,NA
+HMDB0302856,Baikiain,Baikiain,OC(=O)C1CC=CCN1,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Alpha amino acids
+HMDB0000239,Pyridoxine,Pyridoxine,CC1=C(O)C(CO)=C(CO)C=N1,Organic compounds,Organoheterocyclic compounds,Pyridines and derivatives,Pyridoxines,Pyridoxines
+HMDB0001183,Octanol,Octanol,CCCCCCCCO,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty alcohols,Fatty alcohols
+HMDB0000341,2-Octenedioic acid,2-Octenedioic acid,OC(=O)CCCC\C=C\C(O)=O,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty acids and conjugates,Medium-chain fatty acids
+HMDB0247230,7-Amino-4-methylcoumarin,7-Amino-4-methylcoumarin,CC1=CC(=O)OC2=C1C=CC(N)=C2,Organic compounds,Phenylpropanoids and polyketides,Coumarins and derivatives,NA,Coumarins and derivatives
+HMDB0001046,Cotinine,Cotinine,CN1C(CCC1=O)C1=CN=CC=C1,Organic compounds,Organoheterocyclic compounds,Pyridines and derivatives,Pyrrolidinylpyridines,Pyrrolidinylpyridines
+HMDB0002825,Theobromine,Theobromine,CN1C=NC2=C1C(O)=NC(=O)N2C,Organic compounds,Organoheterocyclic compounds,Imidazopyrimidines,Purines and purine derivatives,Xanthines
+HMDB0001713,m-Coumaric acid,m-Coumaric acid,OC(=O)\C=C\C1=CC(O)=CC=C1,Organic compounds,Phenylpropanoids and polyketides,Cinnamic acids and derivatives,Hydroxycinnamic acids and derivatives,Hydroxycinnamic acids
+HMDB0031454,Jasmone,trans-Jasmone,CC\C=C\CC1=C(C)CCC1=O,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Carbonyl compounds,Cyclic ketones
+HMDB0253018,H-Hyp-gly-OH,H-Hyp-gly-OH,OC1CNC(C1)C(=O)NCC(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Dipeptides
+HMDB0304063,2-carboxyxylonolactone,2-carboxy-L-xylonolactone,OCC1OC(=O)C(O)(C1O)C([O-])=O,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Carbohydrates and carbohydrate conjugates,Sugar acids and derivatives
+HMDB0001847,Caffeine,Caffeine,CN1C=NC2=C1C(=O)N(C)C(=O)N2C,Organic compounds,Organoheterocyclic compounds,Imidazopyrimidines,Purines and purine derivatives,Xanthines
+HMDB0030372,Maltoxazine,Maltoxazine,O=C1CCC2=C1N1CCCC1OC2,Organic compounds,Organoheterocyclic compounds,Pyrrolidines,NA,Pyrrolidines
+HMDB0000904,Citrulline,Citrulline,N[C@@H](CCCNC(N)=O)C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,L-alpha-amino acids
+HMDB0031181,Homodihydrojasmone,Homodihydrojasmone,CCCCCCC1=C(C)CCC1=O,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Carbonyl compounds,Cyclic ketones
+HMDB0251566,Dodecanamide,Dodecanamide,CCCCCCCCCCCC(N)=O,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty amides,Fatty amides
+HMDB0038835,1-Cinnamoylpyrrolidine,(E)-1-Cinnamoylpyrrolidine,O=C(\C=C/C1=CC=CC=C1)N1CCCC1,Organic compounds,Phenylpropanoids and polyketides,Cinnamic acids and derivatives,NA,Cinnamic acids and derivatives
+HMDB0060335,1,2-Dihydronaphthalene-1,2-diol,1,2-Dihydronaphthalene-1,2-diol,OC1C=CC2=CC=CC=C2C1O,Organic compounds,Benzenoids,Naphthalenes,NA,Naphthalenes
+HMDB0000201,Acetylcarnitine,L-Acetylcarnitine,CC(=O)O[C@H](CC(O)=O)C[N+](C)(C)C,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty acid esters,Acyl carnitines
+HMDB0243539,Isopilocarpine,(+)-Isopilocarpine,CCC1C(CC2=CN=CN2C)COC1=O,Organic compounds,Alkaloids and derivatives,NA,NA,Alkaloids and derivatives
+HMDB0039884,2-Cyclotetradecen-1-one,2-Cyclotetradecen-1-one,O=C1CCCCCCCCCCC\C=C\1,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Carbonyl compounds,Cyclic ketones
+HMDB0034276,L,L-Cyclo(leucylprolyl),L,L-Cyclo(leucylprolyl),[H][C@@]12CCCN1C(=O)[C@H](CC(C)C)NC2=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Alpha amino acids and derivatives
+HMDB0255976,Oxdralazine,Oxdralazine,NNC1=NN=C(C=C1)N(CCO)CCO,Organic compounds,Organic nitrogen compounds,Organonitrogen compounds,Amines,Dialkylarylamines
+HMDB0303254,2-(Menthoxy)ethanol,2-(L-Menthoxy)ethanol,[H][C@@]1(C)CC[C@@]([H])(C(C)C)[C@@]([H])(C1)OCCO,Organic compounds,Lipids and lipid-like molecules,Prenol lipids,Monoterpenoids,Menthane monoterpenoids
+HMDB0012204,Zeatin,Zeatin,C\C(CO)=C/CNC1=C2N=CN=C2N=CN1,Organic compounds,Organoheterocyclic compounds,Imidazopyrimidines,Purines and purine derivatives,6-alkylaminopurines
+HMDB0038211,Humulenol I,Humulenol I,C\C1=C\CCC(=C)C(O)CC(C)(C)\C=C/C1,Organic compounds,Lipids and lipid-like molecules,Prenol lipids,Sesquiterpenoids,Sesquiterpenoids
+HMDB0246557,4-Octylphenol,4-Octylphenol,CCCCCCCCC1=CC=C(O)C=C1,Organic compounds,Benzenoids,Phenols,1-hydroxy-2-unsubstituted benzenoids,1-hydroxy-2-unsubstituted benzenoids
+HMDB0244166,1,3-Dicyclohexylurea,1,3-Dicyclohexylurea,O=C(NC1CCCCC1)NC1CCCCC1,Organic compounds,Organic acids and derivatives,Organic carbonic acids and derivatives,Ureas,Ureas
+HMDB0032215,2-Decylfuran,2-Decylfuran,CCCCCCCCCCC1=CC=CO1,Organic compounds,Organoheterocyclic compounds,Heteroaromatic compounds,NA,Heteroaromatic compounds
+HMDB0001422,3-Hydroxy-N6,N6,N6-trimethyllysine,3-Hydroxy-N6,N6,N6-trimethyl-L-lysine,C[N+](C)(C)CCCC(O)[C@H](N)C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,L-alpha-amino acids
+HMDB0011175,Leucylproline,Leucylproline,CC(C)C[C@H](N)C(=O)N1CCC[C@H]1C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Dipeptides
+HMDB0012948,Formyl-5-hydroxykynurenamine,Formyl-5-hydroxykynurenamine,NCCC(=O)C1=C(NC=O)C=CC(O)=C1,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Carbonyl compounds,Alkyl-phenylketones
+HMDB0029051,Seryltyrosine,Seryltyrosine,N[C@@H](CO)C(=O)N[C@@H](CC1=CC=C(O)C=C1)C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Dipeptides
+HMDB0029388,Cucurbic acid,Cucurbic acid,CC\C=C\CC1C(O)CCC1CC(O)=O,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Lineolic acids and derivatives,Jasmonic acids
+HMDB0038982,4-Nonylphenol,4-Nonylphenol,CCCCCCCCCC1=CC=C(O)C=C1,Organic compounds,Benzenoids,Phenols,1-hydroxy-2-unsubstituted benzenoids,1-hydroxy-2-unsubstituted benzenoids
+HMDB0038212,Humulenol II,Humulenol II,C\C1=C\CC(C)(C)\C=C/CC(=C)C(O)CC1,Organic compounds,Lipids and lipid-like molecules,Prenol lipids,Sesquiterpenoids,Sesquiterpenoids
+HMDB0029042,Serylisoleucine,Serylisoleucine,CC[C@H](C)[C@H](NC(=O)[C@@H](N)CO)C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Dipeptides
+HMDB0040377,3-Pentadecenal,3-Pentadecenal,CCCCCCCCCCC\C=C\CC=O,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty aldehydes,Fatty aldehydes
+HMDB0000273,Thymidine,Thymidine,CC1=CN([C@H]2C[C@H](O)[C@@H](CO)O2)C(=O)NC1=O,Organic compounds,Nucleosides, nucleotides, and analogues,Pyrimidine nucleosides,Pyrimidine 2'-deoxyribonucleosides,Pyrimidine 2'-deoxyribonucleosides
+HMDB0246097,3'-Hydroxyamobarbital,3'-Hydroxyamobarbital,CCC1(CCC(C)(C)O)C(=O)NC(=O)NC1=O,Organic compounds,Organoheterocyclic compounds,Diazines,Pyrimidines and pyrimidine derivatives,Barbituric acid derivatives
+HMDB0039177,1-O-Galloylglycerol,1-O-Galloylglycerol,OCC(O)COC(=O)C1=CC(O)=C(O)C(O)=C1,Organic compounds,Benzenoids,Benzene and substituted derivatives,Benzoic acids and derivatives,Galloyl esters
+HMDB0250631,Cyclo(PhePro),Cyclo(L-Phe-L-Pro),O=C1NC(CC2=CC=CC=C2)C(=O)N2CCCC12,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Alpha amino acids and derivatives
+HMDB0240712,Bisphenol S,Bisphenol S,OC1=CC=C(C=C1)S(=O)(=O)C1=CC=C(O)C=C1,Organic compounds,Benzenoids,Benzene and substituted derivatives,Benzenesulfonyl compounds,Benzenesulfonyl compounds
+HMDB0012273,Palmitic amide,Palmitic amide,CCCCCCCCCCCCCCCC(N)=O,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty amides,Fatty amides
+HMDB0000826,Pentadecanoic acid,Pentadecanoic acid,CCCCCCCCCCCCCCC(O)=O,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty acids and conjugates,Long-chain fatty acids
+HMDB0013988,N-Deschlorobenzoyl indomethacin,N-Deschlorobenzoyl indomethacin,COC1=CC2=C(NC(C)=C2CC(O)=O)C=C1,Organic compounds,Organoheterocyclic compounds,Indoles and derivatives,Indolyl carboxylic acids and derivatives,Indole-3-acetic acid derivatives
+HMDB0258180,Sclareol oxide,Sclareol oxide,CC1=CCC2C(C)(CCC3C(C)(C)CCCC23C)O1,Organic compounds,Organoheterocyclic compounds,Naphthopyrans,NA,Naphthopyrans
+HMDB0014680,Nortriptyline,Nortriptyline,CNCCC=C1C2=CC=CC=C2CCC2=CC=CC=C12,Organic compounds,Benzenoids,Dibenzocycloheptenes,NA,Dibenzocycloheptenes
+HMDB0029134,Valylphenylalanine,Valylphenylalanine,CC(C)[C@H](N)C(=O)N[C@@H](CC1=CC=CC=C1)C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Dipeptides
+HMDB0037543,2-(5-Tetradecenyl)cyclobutanone,(±)-(Z)-2-(5-Tetradecenyl)cyclobutanone,CCCCCCCC\C=C/CCCCC1CCC1=O,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Carbonyl compounds,Cyclic ketones
+HMDB0000050,Adenosine,Adenosine,NC1=C2N=CN([C@@H]3O[C@H](CO)[C@@H](O)[C@H]3O)C2=NC=N1,Organic compounds,Nucleosides, nucleotides, and analogues,Purine nucleosides,NA,Purine nucleosides
+HMDB0031336,9-Cycloheptadecen-1-one,(Z)-9-Cycloheptadecen-1-one,O=C1CCCCCCC\C=C\CCCCCCC1,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Carbonyl compounds,Cyclic ketones
+HMDB0028832,Glutamylvaline,Glutamylvaline,CC(C)[C@H](NC(=O)[C@@H](N)CCC(O)=O)C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Dipeptides
+HMDB0028893,Histidylproline,Histidylproline,N[C@@H](CC1=CNC=N1)C(=O)N1CCC[C@H]1C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Dipeptides
+HMDB0245878,3-Gonal,3-Gonal,O=CC1CCC2C(CCC3C4CCCC4CCC23)C1,Organic compounds,Lipids and lipid-like molecules,Steroids and steroid derivatives,NA,Steroids and steroid derivatives
+HMDB0029113,Tyrosyl-Proline,Tyrosyl-Proline,NC(CC1=CC=C(O)C=C1)C(=O)N1CCCC1C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Dipeptides
+HMDB0028991,Phenylalanylaspartic acid,Phenylalanylaspartic acid,N[C@@H](CC1=CC=CC=C1)C(=O)N[C@@H](CC(O)=O)C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Dipeptides
+HMDB0247717,Octadeca-9,12-dienal,Octadeca-9,12-dienal,CCCCCC=CCC=CCCCCCCCC=O,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty aldehydes,Fatty aldehydes
+HMDB0035473,Avocadyne,Avocadyne,OCC(O)CC(O)CCCCCCCCCCCC#C,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty alcohols,Long-chain fatty alcohols
+HMDB0038685,Muricatacin,Muricatacin,CCCCCCCCCCCCC(O)C1CCC(=O)O1,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty alcohols,Long-chain fatty alcohols
+HMDB0029377,Piperine,Piperine,O=C(\C=C\C=C\C1=CC2=C(OCO2)C=C1)N1CCCCC1,Organic compounds,Alkaloids and derivatives,NA,NA,Alkaloids and derivatives
+HMDB0258433,Spisulosine,Spisulosine,CCCCCCCCCCCCCCCC(O)C(C)N,Organic compounds,Organic nitrogen compounds,Organonitrogen compounds,Amines,1,2-aminoalcohols
+HMDB0006344,Phenylacetylglutamine,Phenylacetylglutamine,NC(=O)CC[C@H](NC(=O)CC1=CC=CC=C1)C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,N-acyl-alpha amino acids
+HMDB0256432,Phenylacetyl glutaminate,Phenylacetyl glutaminate,NC(CCC(N)=O)C(=O)OC(=O)CC1=CC=CC=C1,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Glutamine and derivatives
+HMDB0014583,Trimethoprim,Trimethoprim,COC1=CC(CC2=CN=C(N)N=C2N)=CC(OC)=C1OC,Organic compounds,Benzenoids,Phenol ethers,Anisoles,Anisoles
+HMDB0030972,8-Oxohexadecanoic acid,8-Oxohexadecanoic acid,CCCCCCCCC(=O)CCCCCCC(O)=O,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty acids and conjugates,Long-chain fatty acids
+HMDB0029354,4-Hydroxyproline galactoside,4-Hydroxyproline galactoside,[H][C@@]1(O[C@H]2CN[C@@H](C2)C(O)=O)O[C@H](CO)[C@H](O)[C@H](O)[C@H]1O,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty alcohol esters,Fatty alcohol esters
+HMDB0059871,Ethyl 9-hexadecenoate,Ethyl 9-hexadecenoate,CCCCCC\C=C\CCCCCCCC(=O)OCC,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty acid esters,Fatty acid esters
+HMDB0000252,Sphingosine,Sphingosine,CCCCCCCCCCCCC\C=C\[C@@H](O)[C@@H](N)CO,Organic compounds,Organic nitrogen compounds,Organonitrogen compounds,Amines,1,2-aminoalcohols
+HMDB0301858,8-Deoxylactucin,8-Deoxylactucin,[H]C1CC(C)=C2C(=O)C=C(CO)[C@]2([H])[C@H]2OC(=O)C(=C)C12,Organic compounds,Organoheterocyclic compounds,Lactones,Gamma butyrolactones,Gamma butyrolactones
+HMDB0000706,Aspartylphenylalanine,Aspartylphenylalanine,N[C@@H](CC(O)=O)C(=O)N[C@@H](CC1=CC=CC=C1)C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Peptides
+HMDB0304773,11,15-Octadecadienoic acid,trans-11,cis-15-Octadecadienoic acid,[H]\C(CC)=C(/[H])CC\C([H])=C(/[H])CCCCCCCCCC(O)=O,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Lineolic acids and derivatives,Lineolic acids and derivatives
+HMDB0029619,Arabinopyranobiose,Arabinopyranobiose,OC1COC(OC2C(O)COC(O)C2O)C(O)C1O,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Carbohydrates and carbohydrate conjugates,O-glycosyl compounds
+HMDB0001043,Arachidonic acid,Arachidonic acid,CCCCC\C=C/C\C=C/C\C=C/C\C=C/CCCC(O)=O,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty acids and conjugates,Long-chain fatty acids
+HMDB0014341,Betaxolol,Betaxolol,CC(C)NCC(O)COC1=CC=C(CCOCC2CC2)C=C1,Organic compounds,Benzenoids,Phenols,Tyrosols and derivatives,Tyrosols and derivatives
+HMDB0029783,Mono-p-coumaroylmesotartaric acid,Mono-trans-p-coumaroylmesotartaric acid,OC(CC(O)=O)C(OC(=O)\C=C\C1=CC=C(O)C=C1)C(O)=O,Organic compounds,Phenylpropanoids and polyketides,Cinnamic acids and derivatives,Hydroxycinnamic acids and derivatives,Coumaric acid esters
+HMDB0013622,-Nonadecenoic acid,10Z-Nonadecenoic acid,CCCCCCCC\C=C/CCCCCCCCC(O)=O,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty acids and conjugates,Long-chain fatty acids
+HMDB0000795,Pristanic acid,Pristanic acid,CC(C)CCCC(C)CCCC(C)CCCC(C)C(O)=O,Organic compounds,Lipids and lipid-like molecules,Prenol lipids,Diterpenoids,Acyclic diterpenoids
+HMDB0004610,Phytosphingosine,Phytosphingosine,CCCCCCCCCCCCCC[C@@H](O)[C@@H](O)[C@@H](N)CO,Organic compounds,Organic nitrogen compounds,Organonitrogen compounds,Amines,1,3-aminoalcohols
+HMDB0030729,Gravelliferone,Gravelliferone,CC(C)=CCC1=CC2=C(OC(=O)C(=C2)C(C)(C)C=C)C=C1O,Organic compounds,Phenylpropanoids and polyketides,Coumarins and derivatives,Hydroxycoumarins,7-hydroxycoumarins
+HMDB0013078,Stearoylethanolamide,Stearoylethanolamide,CCCCCCCCCCCCCCCCCC(=O)NCCO,Organic compounds,Organic nitrogen compounds,Organonitrogen compounds,Amines,N-acylethanolamines
+HMDB0252828,Glycylprolylarginine,Glycylprolylarginine,NCC(=O)N1CCCC1C(=O)NC(CCCNC(N)=N)C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Dipeptides
+HMDB0002183,Docosahexaenoic acid,Docosahexaenoic acid,CC\C=C/C\C=C/C\C=C/C\C=C/C\C=C/C\C=C/CCC(O)=O,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty acids and conjugates,Very long-chain fatty acids
+HMDB0031008,15,16-Dihydroxyoctadecanoic acid,(+)-15,16-Dihydroxyoctadecanoic acid,CCC(O)C(O)CCCCCCCCCCCCCC(O)=O,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty acids and conjugates,Long-chain fatty acids
+HMDB0029106,Tyrosylhydroxyproline,Tyrosylhydroxyproline,N[C@@H](CC1=CC=C(O)C=C1)C(=O)N1C[C@H](O)C[C@H]1C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Dipeptides
+HMDB0000594,gamma-Glutamylphenylalanine,gamma-Glutamylphenylalanine,N[C@@H](CCC(=O)N[C@@H](CC1=CC=CC=C1)C(O)=O)C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Phenylalanine and derivatives
+HMDB0033009,Foeniculoside VIII,Foeniculoside VIII,CC1(C)OC2(C)C(O)CC1CC2OC1OC(CO)C(O)C(O)C1O,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Carbohydrates and carbohydrate conjugates,O-glycosyl compounds
+HMDB0256119,Paquinimod,Paquinimod,CCN(C(=O)C1=C(O)C2=C(CC)C=CC=C2N(C)C1=O)C1=CC=CC=C1,Organic compounds,Benzenoids,Benzene and substituted derivatives,Anilides,Aromatic anilides
+HMDB0248395,Andrographolide,Andrographolide,CC1(CO)C(O)CCC2(C)C(CC=C3C(O)COC3=O)C(=C)CCC12,Organic compounds,Organoheterocyclic compounds,Lactones,Gamma butyrolactones,Gamma butyrolactones
+HMDB0244586,14-Methoxymetopon,14-Methoxymetopon,COC12CCC(=O)C3(C)OC4=C(O)C=CC5=C4C13CCN(C)C2C5,Organic compounds,Benzenoids,Phenanthrenes and derivatives,NA,Phenanthrenes and derivatives
+HMDB0031923,10,20-Dihydroxyeicosanoic acid,10,20-Dihydroxyeicosanoic acid,OCCCCCCCCCCC(O)CCCCCCCCC(O)=O,Organic compounds,Lipids and lipid-like molecules,Fatty Acyls,Fatty acids and conjugates,Long-chain fatty acids
+HMDB0254825,Modrastane,Modrastane,CC12CCC3C(CCC45OC4C(O)=C(CC35C)C#N)C1CCC2O,Organic compounds,Lipids and lipid-like molecules,Steroids and steroid derivatives,Estrane steroids,Estrane steroids
+HMDB0254033,Leucomalachite green,Leucomalachite green,CN(C)C1=CC=C(C=C1)C(C1=CC=CC=C1)C1=CC=C(C=C1)N(C)C,Organic compounds,Benzenoids,Triphenyl compounds,NA,Triphenyl compounds
+HMDB0304808,Phe-Pro-Ile,Phe-Pro-Ile,CCC(C)C(N=C(O)C1CCCN1C(=O)C(N)CC1=CC=CC=C1)C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Oligopeptides
+HMDB0037691,Limocitrol,Limocitrol,COC1=C(O)C=CC(=C1)C1=C(O)C(=O)C2=C(O1)C(OC)=C(O)C(OC)=C2O,Organic compounds,Phenylpropanoids and polyketides,Flavonoids,Flavones,Flavonols
+HMDB0072839,MG(19:0/0:0/0:0),MG(19:0/0:0/0:0),[H][C@@](O)(CO)COC(=O)CCCCCCCCCCCCCCCCCC,Organic compounds,Lipids and lipid-like molecules,Glycerolipids,Monoradylglycerols,1-monoacylglycerols
+HMDB0249803,Centpropazine,Centpropazine,CCC(=O)C1=CC=C(OCC(O)CN2CCN(CC2)C2=CC=CC=C2)C=C1,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Carbonyl compounds,Alkyl-phenylketones
+HMDB0033455,2-Hydroxy-3-methyl-9H-carbazole,2-Hydroxy-3-methyl-9H-carbazole,CC1=C(O)C=C2NC3=CC=CC=C3C2=C1,Organic compounds,Organoheterocyclic compounds,Indoles and derivatives,Carbazoles,Carbazoles
+HMDB0032587,Pteroside Z,Pteroside Z,CC1=CC2=C(C(=O)C(C)(C)C2)C(C)=C1CCOC1OC(CO)C(O)C(O)C1O,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Carbohydrates and carbohydrate conjugates,O-glycosyl compounds
+HMDB0259275,Tris(2-butoxyethyl) phosphate,Tris(2-butoxyethyl) phosphate,CCCCOCCOP(=O)(OCCOCCCC)OCCOCCCC,Organic compounds,Organic acids and derivatives,Organic phosphoric acids and derivatives,Phosphate esters,Trialkyl phosphates
+HMDB0038918,Armillaritin,Armillaritin,CC1=CC(O)=CC(O)=C1C(=O)OC1CC2(C)C1C(C=O)=CC1(O)CC(C)(C)CC21,Organic compounds,Lipids and lipid-like molecules,Prenol lipids,Sesquiterpenoids,Melleolides and analogues
+HMDB0254257,Lykurim,Lykurim,CS(=O)(=O)OCCNCC(O)C(O)CNCCOS(C)(=O)=O,Organic compounds,Organic acids and derivatives,Organic sulfonic acids and derivatives,Organosulfonic acids and derivatives,Organosulfonic acid esters
+HMDB0072871,MG(21:0/0:0/0:0),MG(21:0/0:0/0:0),[H][C@@](O)(CO)COC(=O)CCCCCCCCCCCCCCCCCCCC,Organic compounds,Lipids and lipid-like molecules,Glycerolipids,Monoradylglycerols,1-monoacylglycerols
+HMDB0248678,Astromicin,Astromicin,COC1C(O)C(N)C(OC2OC(CCC2N)C(C)N)C(O)C1N(C)C(=O)CN,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Carbohydrates and carbohydrate conjugates,Aminocyclitol glycosides
+HMDB0303759,Hypochoeroside A,Hypochoeroside A,CC1C2C(OC1=O)\C=C(C)\C(O)C\C=C(C)\CC2OC1OC(CO)C(O)C(O)C1O,Organic compounds,Lipids and lipid-like molecules,Prenol lipids,Terpene lactones,Germacranolides and derivatives
+HMDB0011152,LysoPE(P-16:0/0:0),LysoPE(P-16:0/0:0),[H][C@@](O)(CO\C=C/CCCCCCCCCCCCCC)COP(O)(=O)OCCN,Organic compounds,Lipids and lipid-like molecules,Glycerophospholipids,Glycerophosphoethanolamines,1-(1Z-alkenyl)-glycero-3-phosphoethanolamines
+HMDB0247415,8-AHA-cAMP,8-AHA-cAMP,NCCCCCCNC1=NC2=C(N=CN=C2N)N1C1OC2COP(O)(=O)OC2C1O,Organic compounds,Nucleosides, nucleotides, and analogues,Purine nucleotides,Cyclic purine nucleotides,3',5'-cyclic purine nucleotides
+HMDB0011504,LysoPE(16:1/0:0),LysoPE(16:1(9Z)/0:0),[H][C@@](O)(COC(=O)CCCCCCC\C=C/CCCCCC)COP(O)(=O)OCCN,Organic compounds,Lipids and lipid-like molecules,Glycerophospholipids,Glycerophosphoethanolamines,1-acyl-sn-glycero-3-phosphoethanolamines
+HMDB0011503,LysoPE(16:0/0:0),LysoPE(16:0/0:0),[H][C@@](O)(COC(=O)CCCCCCCCCCCCCCC)COP(O)(=O)OCCN,Organic compounds,Lipids and lipid-like molecules,Glycerophospholipids,Glycerophosphoethanolamines,1-acyl-sn-glycero-3-phosphoethanolamines
+HMDB0012634,20-COOH-leukotriene E4,20-COOH-leukotriene E4,N[C@H](CS[C@H](\C=C\C=C\C=C/C\C=C/CCCCC(O)=O)[C@@H](O)CCCC(O)=O)C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Cysteine and derivatives
+HMDB0011507,LysoPE(18:2/0:0),LysoPE(18:2(9Z,12Z)/0:0),[H][C@@](O)(COC(=O)CCCCCCC\C=C/C\C=C/CCCCC)COP(O)(=O)OCCN,Organic compounds,Lipids and lipid-like molecules,Glycerophospholipids,Glycerophosphoethanolamines,1-acyl-sn-glycero-3-phosphoethanolamines
+HMDB0011477,LysoPE(0:0/18:2),LysoPE(0:0/18:2(9Z,12Z)),[H][C@@](CO)(COP(O)(=O)OCCN)OC(=O)CCCCCCC\C=C/C\C=C/CCCCC,Organic compounds,Lipids and lipid-like molecules,Glycerophospholipids,Glycerophosphoethanolamines,2-acyl-sn-glycero-3-phosphoethanolamines
+HMDB0011505,LysoPE(18:1/0:0),LysoPE(18:1(11Z)/0:0),[H][C@@](O)(COC(=O)CCCCCCCCC\C=C/CCCCCC)COP(O)(=O)OCCN,Organic compounds,Lipids and lipid-like molecules,Glycerophospholipids,Glycerophosphoethanolamines,1-acyl-sn-glycero-3-phosphoethanolamines
+HMDB0011475,LysoPE(0:0/18:1),LysoPE(0:0/18:1(11Z)),[H][C@@](CO)(COP(O)(=O)OCCN)OC(=O)CCCCCCCCC\C=C/CCCCCC,Organic compounds,Lipids and lipid-like molecules,Glycerophospholipids,Glycerophosphoethanolamines,2-acyl-sn-glycero-3-phosphoethanolamines
+HMDB0029015,Prolyl-Glutamine,Prolyl-Glutamine,NC(=O)CCC(NC(=O)C1CCCN1)C(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Dipeptides
+HMDB0253396,Ile-Glu-Thr-Asp-fluoromethyl ketone,Ile-Glu-Thr-Asp-fluoromethyl ketone,CCC(C)C(N)C(=O)NC(CCC(O)=O)C(=O)NC(C(C)O)C(=O)NC(CC(O)=O)C(=O)CF,Organic compounds,Organic acids and derivatives,Peptidomimetics,Hybrid peptides,Hybrid peptides
+HMDB0010382,LysoPC(16:0/0:0),LysoPC(16:0/0:0),CCCCCCCCCCCCCCCC(=O)OC[C@@H](O)COP([O-])(=O)OCC[N+](C)(C)C,Organic compounds,Lipids and lipid-like molecules,Glycerophospholipids,Glycerophosphocholines,1-acyl-sn-glycero-3-phosphocholines
+HMDB0253033,Val-Gly-Val-Ala-Pro-Gly,Val-Gly-Val-Ala-Pro-Gly,CC(C)C(N)C(=O)NCC(=O)NC(C(C)C)C(=O)NC(C)C(=O)N1CCCC1C(=O)NCC(O)=O,Organic compounds,Organic acids and derivatives,Carboxylic acids and derivatives,Amino acids, peptides, and analogues,Oligopeptides
+HMDB0302594,PL,PL,CCC1CC(C)C(O)\C=C\C=C\CC(C)OC(=O)CC(O)C(OC)C1OC1OC(C)CC(O)(C1O)C(C)=O,Organic compounds,Phenylpropanoids and polyketides,Macrolides and analogues,NA,Macrolides and analogues
+HMDB0035987,Ganoderic acid H,Ganoderic acid H,CC(CC(=O)CC(C)C(O)=O)C1CC(=O)C2(C)C3=C(C(=O)C(OC(C)=O)C12C)C1(C)CCC(O)C(C)(C)C1CC3=O,Organic compounds,Lipids and lipid-like molecules,Prenol lipids,Triterpenoids,Triterpenoids
+HMDB0254976,Myofedrin,Myofedrin,COC1=CC=CC(=C1)C(=O)CCNC(C)C(O)C1=CC=CC=C1,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Carbonyl compounds,Alkyl-phenylketones
+HMDB0114853,PA(16:1/14:1),PA(16:1(9Z)/14:1(9Z)),[H][C@@](COC(=O)CCCCCCC\C=C/CCCCCC)(COP(O)(O)=O)OC(=O)CCCCCCC\C=C/CCCC,Organic compounds,Lipids and lipid-like molecules,Glycerophospholipids,Glycerophosphates,1,2-diacylglycerol-3-phosphates
+HMDB0251275,Digitoxigenin bisdigitoxide,Digitoxigenin bisdigitoxide,CC1OC(CC(O)C1O)OC1C(O)CC(OC2CCC3(C)C(CCC4C3CCC3(C)C(CCC43O)C3=CC(=O)OC3)C2)OC1C,Organic compounds,Lipids and lipid-like molecules,Steroids and steroid derivatives,Steroid lactones,Cardenolide glycosides and derivatives
+HMDB0015680,Nonoxynol-9,Nonoxynol-9,CCCCCCCCCC1=CC=C(OCCOCCOCCOCCOCCOCCOCCOCCOCCO)C=C1,Organic compounds,Organic oxygen compounds,Organooxygen compounds,Ethers,Polyethylene glycols
+HMDB0267575,PA(i-14:0/18:1-O),PA(i-14:0/18:1(12Z)-O(9S,10R)),[H][C@@](COC(=O)CCCCCCCCCCC(C)C)(COP(O)(O)=O)OC(=O)CCCCCCCC1OC1C\C=C/CCCCC,NA,NA,NA,NA,NA
+HMDB0257486,Saquinavir-NO,Saquinavir-NO,CC(C)(C)NC(=O)C1CC2CCCCC2CN1CC(O[N+]([O-])=O)C(CC1=CC=CC=C1)NC(=O)C(CC(N)=O)NC(=O)C1=NC2=CC=CC=C2C=C1,Organic compounds,Organoheterocyclic compounds,Quinolines and derivatives,Quinoline carboxamides,Quinoline carboxamides
+HMDB0116637,PG(a-13:0/18:2),PG(a-13:0/18:2(9Z,11Z)),[H][C@](O)(CO)COP(O)(=O)OC[C@@]([H])(COC(=O)CCCCCCCCC(C)CC)OC(=O)CCCCCCC\C=C/C=C\CCCCCC,Organic compounds,Lipids and lipid-like molecules,Glycerophospholipids,Glycerophosphoglycerols,Phosphatidylglycerols
+HMDB0263423,PA(16:1/18:1-2OH(9,10)),PA(16:1(9Z)/18:1(12Z)-2OH(9,10)),[H][C@@](COC(=O)CCCCCCC\C=C/CCCCCC)(COP(O)(O)=O)OC(=O)CCCCCCC[C@H](O)[C@@H](O)C\C=C/CCCCC,NA,NA,NA,NA,NA
+HMDB0270691,PG(18:1O/a-15:0),PG(18:1(12Z)-O(9S,10R)/a-15:0),[H][C@](O)(CO)COP(O)(=O)OC[C@@]([H])(COC(=O)CCCCCCCC1OC1C\C=C/CCCCC)OC(=O)CCCCCCCCCCC(C)CC,NA,NA,NA,NA,NA
+HMDB0271665,PG(PGF1alpha/i-17:0),PG(PGF1alpha/i-17:0),CCCCC[C@H](O)\C=C\[C@H]1[C@H](O)C[C@H](O)[C@@H]1CCCCCCC(=O)OC[C@H](COP(O)(=O)OC[C@@H](O)CO)OC(=O)CCCCCCCCCCCCCC(C)C,NA,NA,NA,NA,NA
