@@ -1,0 +1,4 @@
+Feature	lfc_group1g2	lfc_group1g3	lfc_group1g4	p	q	smiles	kingdom	super_class	class	sub_class	direct_parent	mode
+Undec-5-enedioylcarnitine	-0.203	-0.236	-1.003	0.004	0.526666666666667	C[N+](C)(C)CC(CC([O-])=O)OC(=O)CCCCC=CCCCC(O)=O	Organic compounds	Lipids and lipid-like molecules	Fatty Acyls	Fatty acid esters	Acyl carnitines	negative
+Dodeca-3,6,9-trienoylcarnitine	-0.16	-0.265	-0.877	0.009	0.526666666666667	CCC=CCC=CCC=CCC(=O)OC(CC([O-])=O)C[N+](C)(C)C	Organic compounds	Lipids and lipid-like molecules	Fatty Acyls	Fatty acid esters	Acyl carnitines	negative
+4,1-Benzoxazepine	0.341	0.393	0.594	0.009	0.66	O1C=CN=C2C=CC=CC2=C1	Organic compounds	Organoheterocyclic compounds	Benzoxazepines	NA	Benzoxazepines	positive
