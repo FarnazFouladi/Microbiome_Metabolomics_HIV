@@ -1,2 +1,3 @@
 data/external_dataset/Garcia_2024/PRJNA307231_Expvec_list_of_SummarizedExperiment_objects.rds filter=lfs diff=lfs merge=lfs -text
 Outputs/External_Dataset/Fulcher_2022/Positive/Fulcher_2022_Positive_gut_go_delta_cor.csv filter=lfs diff=lfs merge=lfs -text
+Outputs/External_Dataset/Fulcher_2022/Negative/Fulcher_2022_Negative_gut_go_delta_cor.csv filter=lfs diff=lfs merge=lfs -text
