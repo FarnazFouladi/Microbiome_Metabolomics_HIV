@@ -2,7 +2,7 @@
 rm(list = ls())
 args <- commandArgs(trailingOnly = TRUE)
 sample_type <- args[1]
-dt = "metabolites"
+dt <- "metabolites"
 source("code/load.R")
 output_dir <- file.path(output_dir, "Differential_Abundance_Metabolomics", sample_type)
 sample_id <- paste0(tolower(sample_type), "_sample_id")
@@ -19,13 +19,16 @@ mtb_ann <- read.table(file.path("data/metabolomics_annotation/metabolites_annota
 
 for (mode in c("positive", "negative")) {
   # Load metabolomics data
-  df_met <- read.table(file.path("data/metabolomics",tolower(sample_type),paste0(sample_type,"_",mode,"_metabolites.txt")),
-                       sep = "\t",header = T,check.names = F,quote = "",comment.char = "")
-   
+  df_met <- read.table(file.path("data/metabolomics", tolower(sample_type), paste0(sample_type, "_", mode, "_metabolites.txt")),
+    sep = "\t", header = T, check.names = F, quote = "", comment.char = ""
+  )
+
   # Filter metabolites with low confidence detection
   df_met <- df_met[df_met$`Delta(ppm)` < 5, ]
   df_sub <- df_met[, c(which(colnames(df_met) == "Compound_ID"), which(colnames(df_met) == "1"):ncol(df_met))]
-  df_sub <- df_sub %>% remove_rownames %>% column_to_rownames("Compound_ID")
+  df_sub <- df_sub %>%
+    remove_rownames() %>%
+    column_to_rownames("Compound_ID")
 
   # Remove features with low variation
   sds <- apply(df_sub, 1, sd)
@@ -106,6 +109,8 @@ ancombc_positive <- read.table(file.path(output_dir_sub, "positive/metabolites",
 df_positive <- read.table(file.path(output_dir_sub, "positive/metabolites", paste0("positive", "_", dt, "_ANCOMBC_bias_corrected_data.txt")), sep = "\t", check.names = F, quote = "", comment.char = "", header = T)
 
 ancombc <- rbind(ancombc_negative, ancombc_positive)
+write.table(ancombc, file.path(output_dir_sub, paste0("metabolites", "_ANCOMBC_results.txt")), row.names = F, quote = F, sep = "\t")
+
 
 # Waterfall plot for significant results
 ancombc_sig <- ancombc %>%
@@ -133,11 +138,6 @@ if (nrow(ancombc_sig) > 0) {
 
   write.table(ancombc_save, file.path(output_dir_sub, paste0(dt, "_ANCOMBC_results_sig.txt")), row.names = F, quote = F, sep = "\t")
 
-  if (nrow(ancombc_sig) > 25) {
-    ancombc_sig <- ancombc_sig %>%
-      arrange(q_statussc) %>%
-      slice_head(n = 25)
-  }
 
   if (length(unique(ancombc_sig$change)) == 1 && unique(ancombc_sig$change) == paste("Higher in", group_names[2])) {
     cols_sub <- status_cols["sc"]
@@ -161,9 +161,10 @@ if (nrow(ancombc_sig) > 0) {
     theme_bw(base_size = 16) +
     scale_fill_manual(values = as.character(cols_sub)) +
     geom_text(aes(x = y_p, label = p_sig), size = 5) +
-    labs(y = "", title = paste(sample_type, "Metabolites"), x = "Log Fold Change", fill = "")
+    labs(y = "", title = paste(sample_type, "Metabolites"), x = "Log Fold Change", fill = "") +
+    theme(legend.position = "none")
 
-  pdf(file.path(output_dir_sub, paste0(dt, "_wf_fig.pdf")), 10, 5)
+  pdf(file.path(output_dir_sub, paste0(dt, "_wf_fig.pdf")), 10, 10)
   print(p1)
   dev.off()
 

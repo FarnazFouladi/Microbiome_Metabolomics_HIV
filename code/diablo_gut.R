@@ -8,7 +8,7 @@ microbiome_sample_type <- "Gut"
 microbiome_sample_id <- "nci_metagenomic_stool_id"
 nrepeat <- 10
 nfold <- 10
-ncore <- 6
+ncore <- 8
 output_dir <- file.path("Outputs/Diablo/Gut")
 dir.create(output_dir, recursive = T)
 
@@ -234,7 +234,7 @@ tune.diablo.obj <- tune.block.splsda(X, Y,
 )
 end.time <- Sys.time()
 end.time - start.time
-# Time difference of 18.97746 hours
+#Time difference of 17.5053 hours
 saveRDS(tune.diablo.obj, file.path(output_dir, "tune_diablo_obj.rds"))
 
 list.keepX <- tune.diablo.obj$choice.keepX

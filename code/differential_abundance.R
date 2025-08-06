@@ -122,7 +122,7 @@ for (feature in features_all) {
     write.table(ancombc_save, file.path(dir_diff_sub, paste0(feature, "_ANCOMBC_results_sig.txt")), sep = "\t", row.names = F, quote = F)
 
     # If there are more than 25 features, only show the first 25 most significant ones
-    if (nrow(ancombc_sig) > 30) {
+    if (nrow(ancombc_sig) > 30 & feature != "Species") {
       ancombc_sig <- ancombc_sig %>%
         # slice_head(n = 25) %>%
         arrange(lfc_statussc) %>%
@@ -142,7 +142,7 @@ for (feature in features_all) {
     }
 
     # Waterfall plot
-    pdf(file.path(dir_diff_sub, paste0(feature, "_wf_fig.pdf")), 12, ifelse(nrow(ancombc_sig) > 4, 8, 4))
+    pdf(file.path(dir_diff_sub, paste0(feature, "_wf_fig.pdf")), 10, ifelse(nrow(ancombc_sig) > 4, 8, 4))
 
     p1 <- ggplot(ancombc_sig, aes(y = .data[[variable]], x = .data[["lfc_statussc"]], fill = .data[["change"]])) +
       geom_bar(stat = "identity") +
@@ -160,7 +160,8 @@ for (feature in features_all) {
         if (feature == "Species") theme(axis.text.y = element_text(face = "italic"))
       } +
       geom_text(aes(x = y_p, label = p_sig), size = 5) +
-      labs(y = "", title = paste(sample_type, feature), x = "Log Fold Change", fill = "")
+      labs(y = "", title = paste(sample_type, feature), x = "Log Fold Change", fill = "") +
+      theme(legend.position = "none")
 
     print(p1)
     dev.off()
