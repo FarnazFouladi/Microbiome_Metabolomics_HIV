@@ -1,7 +1,7 @@
 
-This folder includes data, R codes, and outputs for the manuscript “A multi-modal study of microbiomes and metabolomes reveals a system-wide dysbiosis preceding HIV-1 infection”. 
+This repository includes data, R codes, and outputs for the manuscript **A multi-modal study of microbiomes and metabolomes reveals a system-wide dysbiosis preceding HIV-1 infection**. 
 
-The main script to run all the analyses is "code/data_analysis_workflow.R". All the required R packages were installed in RStudio. 
+The main script to run all the analyses is *code/data_analysis_workflow.R*. 
  
 
 ###################################################
