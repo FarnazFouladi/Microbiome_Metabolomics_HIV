@@ -3,7 +3,7 @@ rm(list = ls())
 source("code/load.R")
 source("code/trend_heatmap.R")
 input_dir <- file.path("Outputs", "Correlations_trend_analysis")
-sample_type <- "Oral" <- "Gut"
+sample_type <- "Gut"
 sub_dir <- file.path("Outputs","Differential_Correlations", "Networks",sample_type)
 dir.create(sub_dir,recursive = T)
 ############################################# Gut Species
