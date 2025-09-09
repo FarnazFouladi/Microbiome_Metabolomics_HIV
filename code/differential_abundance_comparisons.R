@@ -83,8 +83,10 @@ compare_results <- function(df_sc, df_sa, data_module) {
         grid.text("***", x, y, gp = gpar(fontsize = 35))
       } else if (df_q[i, j] < 0.01) {
         grid.text("**", x, y, gp = gpar(fontsize = 35))
-      } else if (df_q[i, j] < 0.1) {
+      } else if (df_q[i, j] < 0.05) {
         grid.text("*", x, y, gp = gpar(fontsize = 35))
+      } else if (df_q[i, j] < 0.1) {
+        grid.text("+", x, y, gp = gpar(fontsize = 35))
       }
     },
     cluster_columns = FALSE, cluster_rows = TRUE, col = col_fun,

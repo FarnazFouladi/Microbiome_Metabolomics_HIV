@@ -125,5 +125,6 @@ names(res_list)<-c("Boston MSM","Boston Heterosexual","Botswana","Uganda")
 create_heatmap(res_list,
                p_alpha = 0.01,bh_alpha = 0.1,
                col_names = names(res_list),top_n = 10,
-               sample_type = "Gut", output_dir = "Outputs/External_Dataset/Rocafort_2024"
+               sample_type = "Gut", output_dir = "Outputs/External_Dataset/Rocafort_2024",
+               feature = "Taxa"
 )

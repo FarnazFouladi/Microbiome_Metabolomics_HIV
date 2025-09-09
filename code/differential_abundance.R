@@ -87,7 +87,7 @@ for (feature in features_all) {
       Feature = factor(Feature, levels = unique(Feature)),
       change = ifelse(lfc_statussc < 0, paste("Lower in", group_names[2]), paste("Higher in", group_names[2])),
       change = factor(change, levels = c(paste("Lower in", group_names[2]), paste("Higher in", group_names[2]))),
-      p_sig = ifelse(q_statussc < 0.001, "***", ifelse(q_statussc < 0.01, "**", ifelse(q_statussc < 0.1, "*", ""))),
+      p_sig = ifelse(q_statussc < 0.001, "***", ifelse(q_statussc < 0.01, "**",ifelse(q_statussc < 0.05, "*", ifelse(q_statussc < 0.1, "+", "")))),
       q = round(q_statussc, 3),
       y_p = ifelse(lfc_statussc > 0, lfc_statussc + se_statussc + 0.2, lfc_statussc - se_statussc - 0.2)
     )

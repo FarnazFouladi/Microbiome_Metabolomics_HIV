@@ -149,7 +149,7 @@ ancombc_sig <- ancombc %>%
     Feature = factor(Feature, levels = unique(Feature)),
     change = ifelse(lfc_group1g4 < 0, paste("Lower in", "G4"), paste("Higher in", "G4")),
     change = factor(change, levels = c(paste("Lower in", "G4"), paste("Higher in", "G4"))),
-    p_sig = ifelse(q_val < 0.001, "***", ifelse(q_val < 0.01, "**", ifelse(q_val < 0.1, "*", ""))),
+    p_sig = ifelse(q_val < 0.001, "***", ifelse(q_val < 0.01, "**", ifelse(q_val < 0.05, "*" ,ifelse(q_val < 0.1, "+", "")))),
     q = round(q_val, 3),
     y_p = ifelse(lfc_group1g4 > 0, lfc_group1g4 + se_group1g4 + 0.2, lfc_group1g4 - se_group1g4 - 0.2)
   ) %>%
@@ -217,7 +217,7 @@ if (nrow(ancombc_sig) > 0) {
     mutate_if(is.numeric, function(x) round(x, 2)) %>%
     mutate(study_condition = factor(gsub("group1", "", study_condition), levels = c("g2","g3","g4"))) %>%
     mutate(study_condition = toupper(study_condition) ) %>%
-    mutate(p_sig = ifelse(q_val < 0.001, "***", ifelse(q_val < 0.01, "**", ifelse(q_val < 0.1, "*", "")))) %>%
+    mutate(p_sig = ifelse(q_val < 0.001, "***", ifelse(q_val < 0.01, "**", ifelse(q_val < 0.05,"*",ifelse(q_val < 0.1, "+", ""))))) %>%
     mutate(lb = paste(lfc,p_sig)) %>%
     arrange(trend,lfc,Feature) %>%
     mutate(Feature = factor(Feature,levels = unique(Feature)))

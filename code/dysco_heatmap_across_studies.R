@@ -61,7 +61,11 @@ for (i in 13:14) {
 }
 
 datasets_sig <- bind_rows(datasets_sig)
-datasets_sig_long <- datasets_sig %>%
+
+# Remove taxa that are not the genus level
+taxa_to_remove <- c("Lachnospiraceae","Ruminococcaceae","Coriobacteriaceae","organism")
+
+datasets_sig_long <- datasets_sig %>% filter(!genus %in% taxa_to_remove) %>%
   pivot_wider(id_cols = "genus", names_from = "dataset", values_from = "num_genus") %>%
   column_to_rownames("genus")
 datasets_sig_long[is.na(datasets_sig_long)] <- 0
@@ -90,7 +94,7 @@ hm <- Heatmap(as.matrix(datasets_sig_long),
     title_gp = gpar(fontsize = 40, fontface = "bold"),
     labels_gp = gpar(fontsize = 40),
     direction = "horizontal",
-    title = "Number of dysbiotic \nspecies/genus"
+    title = "Number of disrupted \nspecies/genus"
   )
 )
 
@@ -98,3 +102,4 @@ h <- draw(hm, heatmap_legend_side = "right")
 pdf(file.path("Outputs/External_Dataset", "Genus_dysco_heatmap.pdf"), 30, 60)
 print(h)
 dev.off()
+

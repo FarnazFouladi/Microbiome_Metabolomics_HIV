@@ -82,6 +82,7 @@ source("code/external_data_Garcia_2024_dysco.R")
 source("code/external_data_Rocafort_2024_dysco.R")
 source("code/external_data_Armstrong_2018.R")
 
+source("code/dysco_heatmap_across_studies.R")
 
 ##############################################
 #DYSCO validation

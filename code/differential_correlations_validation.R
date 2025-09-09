@@ -104,7 +104,7 @@ p <- ggplot(df_long, aes(x = name, y = value, color = name)) +
     segment.color = "grey50", color = "black"
   ) +
   theme_bw(base_size = 12) +
-  labs(y = "Median DYSCO Score by Species", x = "", title = "Comparison of Median Scores between Null and Real Data", color = "Data") +
+  labs(y = "Median DISCO Score by Species", x = "", title = "Comparison of Median Scores between Null and Real Data", color = "Data") +
   theme(legend.position = "none") +
   theme(title = element_text(face = "bold"))
 

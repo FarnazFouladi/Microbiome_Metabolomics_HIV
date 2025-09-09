@@ -1,4 +1,4 @@
-create_network <- function(mat,
+create_network <- function(mat,pval_mat,
                            taxonomies = NULL, t = "Species", datasets = NULL, phylum_levels = NULL,
                            repulsion = 0.85,
                            cexNodes = 1.5,
@@ -49,8 +49,10 @@ create_network <- function(mat,
     p <- "taxa "
   }
 
+  # Edges (if adjusted p is between 0.1 and 0.05, replace the solid line with dashed line)
+  edge_lty <- ifelse(pval_mat < 0.05, 1, 2)
 
-  pdf(file.path(outputdir, paste0(prefix, "_network_diff.pdf")), 10, 10)
+  pdf(file.path(outputdir, paste0(prefix, "_network_diff.pdf")), 11, 10)
   plot(props,
     repulsion = repulsion,
     shortenLabels = "simple",
@@ -62,6 +64,7 @@ create_network <- function(mat,
     featVecCol = nodeCol,
     colorVec = cols,
     nodeTransp = 30,
+    lty = edge_lty,
     sameClustCol = TRUE,
     labelScale = TRUE,
     nodeSize = "degree",
@@ -71,10 +74,11 @@ create_network <- function(mat,
     cexHubLabels = cexHubLabels,
     negDiffCol = TRUE,
     labels = showLabel,
-    edgeTranspLow = 50,
-    edgeTranspHigh = 50,
     # highlightHubs = FALSE,
-    hubBorderCol = "gray40"
+    hubBorderCol = "gray40",
+    esize = 1,
+    asize = 1,
+    edgeWidth = 1.5
   )
 
   dev.off()

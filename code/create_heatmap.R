@@ -1,4 +1,4 @@
-create_heatmap <- function(list_res, p_alpha = 0.01, bh_alpha = 0.1, top_n, min_corr = 0.2, col_names, sample_type, output_dir) {
+create_heatmap <- function(list_res, p_alpha = 0.01, bh_alpha = 0.1, top_n, min_corr = 0.2, col_names, sample_type, output_dir, feature = "Species") {
   # Extract p-values
   list_res_p <- lapply(1:length(list_res), function(x) {
     list_tmp_p <- list_res[[x]] %>%
@@ -69,7 +69,7 @@ create_heatmap <- function(list_res, p_alpha = 0.01, bh_alpha = 0.1, top_n, min_
     column_names_gp = gpar(fontsize = 40),
     row_names_side = "left",
     row_dend_side = "right",
-    column_title = paste(sample_type, "Species"),
+    column_title = paste(sample_type, feature),
     column_title_gp = gpar(fontsize = 90),
     heatmap_height = unit(100, "cm"),
     heatmap_width = unit(45, "cm"),
@@ -77,12 +77,14 @@ create_heatmap <- function(list_res, p_alpha = 0.01, bh_alpha = 0.1, top_n, min_
     border = TRUE,
     row_names_max_width = max_text_width(row.names(df_p_sig_log), gp = gpar(fontsize = 20)),
     cell_fun = function(j, i, x, y, w, h, fill) {
-      if (df_p_sig[i, j] < p_alpha & df_cor_keep[i, j] & df_bh_sig[i, j] < bh_alpha / 10) {
+      if (df_p_sig[i, j] < p_alpha & df_cor_keep[i, j] & df_bh_sig[i, j] < bh_alpha / 100) {
         grid.text("***", x, y, gp = gpar(fontsize = 35))
-      } else if (df_p_sig[i, j] < p_alpha & df_cor_keep[i, j] & df_bh_sig[i, j] < bh_alpha / 2) {
+      } else if (df_p_sig[i, j] < p_alpha & df_cor_keep[i, j] & df_bh_sig[i, j] < bh_alpha / 10) {
         grid.text("**", x, y, gp = gpar(fontsize = 35))
-      } else if (df_p_sig[i, j] < p_alpha & df_cor_keep[i, j] & df_bh_sig[i, j] < bh_alpha) {
+      } else if (df_p_sig[i, j] < p_alpha & df_cor_keep[i, j] & df_bh_sig[i, j] < bh_alpha/2) {
         grid.text("*", x, y, gp = gpar(fontsize = 35))
+      } else if (df_p_sig[i, j] < p_alpha & df_cor_keep[i, j] & df_bh_sig[i, j] < bh_alpha) {
+        grid.text("+", x, y, gp = gpar(fontsize = 35))
       }
     },
     cluster_columns = FALSE, cluster_rows = TRUE, col = col_fun,

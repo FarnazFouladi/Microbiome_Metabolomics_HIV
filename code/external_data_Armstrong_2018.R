@@ -125,5 +125,6 @@ names(res_list) <- c("ART-naïve", "ART-treated")
 create_heatmap(res_list,
   p_alpha = 0.01, bh_alpha = 0.1,
   col_names = names(res_list), top_n = 10,
-  sample_type = "Gut", output_dir = "Outputs/External_Dataset/Armstrong_2018"
+  sample_type = "Gut", output_dir = "Outputs/External_Dataset/Armstrong_2018",
+  feature = "Taxa"
 )
