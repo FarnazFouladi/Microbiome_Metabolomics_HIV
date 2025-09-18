@@ -1,0 +1,91 @@
+Feature	study_condition	lfc	p_val	q_val	p_sig
+L-fuculokinase activity	G2	-0.64	0	0	***
+L-fuculokinase activity	G3	-1.15	0	0	***
+L-fuculokinase activity	G4	-1.15	0	0	***
+peptidoglycan beta-N-acetylmuramidase activity	G2	-0.24	0	0.05	+
+peptidoglycan beta-N-acetylmuramidase activity	G3	-0.24	0	0.05	+
+peptidoglycan beta-N-acetylmuramidase activity	G4	-1.15	0	0.05	+
+regulation of gene expression	G2	0	0	0.08	+
+regulation of gene expression	G3	-0.33	0	0.08	+
+regulation of gene expression	G4	-1.04	0	0.08	+
+oxidoreductase activity	G2	-0.36	0	0.08	+
+oxidoreductase activity	G3	-0.36	0	0.08	+
+oxidoreductase activity	G4	-0.99	0	0.08	+
+voltage-gated potassium channel activity	G2	-0.41	0	0.08	+
+voltage-gated potassium channel activity	G3	-0.72	0	0.08	+
+voltage-gated potassium channel activity	G4	-0.98	0	0.08	+
+voltage-gated potassium channel complex	G2	-0.43	0	0.05	+
+voltage-gated potassium channel complex	G3	-0.77	0	0.05	+
+voltage-gated potassium channel complex	G4	-0.93	0	0.05	+
+enterobactin synthetase complex	G2	-0.29	0	0.08	+
+enterobactin synthetase complex	G3	-0.93	0	0.08	+
+enterobactin synthetase complex	G4	-0.93	0	0.08	+
+tRNA-specific ribonuclease activity	G2	0	0	0.11	
+tRNA-specific ribonuclease activity	G3	-0.87	0	0.11	
+tRNA-specific ribonuclease activity	G4	-0.87	0	0.11	
+glycopeptide alpha-N-acetylgalactosaminidase activity	G2	-0.04	0	0.14	
+glycopeptide alpha-N-acetylgalactosaminidase activity	G3	-0.38	0	0.14	
+glycopeptide alpha-N-acetylgalactosaminidase activity	G4	-0.81	0	0.14	
+L-ribulose-phosphate 4-epimerase activity	G2	-0.02	0	0.08	+
+L-ribulose-phosphate 4-epimerase activity	G3	-0.54	0	0.08	+
+L-ribulose-phosphate 4-epimerase activity	G4	-0.8	0	0.08	+
+L-arabinose catabolic process	G2	-0.02	0	0.11	
+L-arabinose catabolic process	G3	-0.54	0	0.11	
+L-arabinose catabolic process	G4	-0.8	0	0.11	
+trehalose transmembrane transporter activity	G2	-0.48	0	0.08	+
+trehalose transmembrane transporter activity	G3	-0.78	0	0.08	+
+trehalose transmembrane transporter activity	G4	-0.78	0	0.08	+
+trehalose transport	G2	-0.48	0	0.05	+
+trehalose transport	G3	-0.78	0	0.05	+
+trehalose transport	G4	-0.78	0	0.05	+
+4-aminobutyrate transaminase activity	G2	-0.71	0.01	0.23	
+4-aminobutyrate transaminase activity	G3	-0.77	0.01	0.23	
+4-aminobutyrate transaminase activity	G4	-0.77	0.01	0.23	
+gamma-aminobutyric acid metabolic process	G2	-0.71	0.01	0.22	
+gamma-aminobutyric acid metabolic process	G3	-0.77	0.01	0.22	
+gamma-aminobutyric acid metabolic process	G4	-0.77	0.01	0.22	
+protein secretion by the type VI secretion system	G2	0	0	0.16	
+protein secretion by the type VI secretion system	G3	0.46	0	0.16	
+protein secretion by the type VI secretion system	G4	0.78	0	0.16	
+carbon-monoxide dehydrogenase (acceptor) activity	G2	0	0.01	0.21	
+carbon-monoxide dehydrogenase (acceptor) activity	G3	0	0.01	0.21	
+carbon-monoxide dehydrogenase (acceptor) activity	G4	0.84	0.01	0.21	
+hydrogen-translocating pyrophosphatase activity	G2	0	0	0.14	
+hydrogen-translocating pyrophosphatase activity	G3	0.21	0	0.14	
+hydrogen-translocating pyrophosphatase activity	G4	0.86	0	0.14	
+GDP-mannose 4,6-dehydratase activity	G2	0	0.01	0.23	
+GDP-mannose 4,6-dehydratase activity	G3	0.63	0.01	0.23	
+GDP-mannose 4,6-dehydratase activity	G4	0.88	0.01	0.23	
+cysteine-glucosaminylinositol ligase activity	G2	0	0	0.05	+
+cysteine-glucosaminylinositol ligase activity	G3	0	0	0.05	+
+cysteine-glucosaminylinositol ligase activity	G4	0.92	0	0.05	+
+2,3-bisphosphoglycerate-independent phosphoglycerate mutase activity	G2	0	0	0.11	
+2,3-bisphosphoglycerate-independent phosphoglycerate mutase activity	G3	0.52	0	0.11	
+2,3-bisphosphoglycerate-independent phosphoglycerate mutase activity	G4	1.08	0	0.11	
+endopeptidase inhibitor activity	G2	0	0	0.05	+
+endopeptidase inhibitor activity	G3	1.21	0	0.05	+
+endopeptidase inhibitor activity	G4	1.21	0	0.05	+
+protein-DNA covalent cross-linking	G2	0	0	0	***
+protein-DNA covalent cross-linking	G3	0.4	0	0	***
+protein-DNA covalent cross-linking	G4	1.25	0	0	***
+thymidylate synthase (FAD) activity	G2	0	0	0.05	+
+thymidylate synthase (FAD) activity	G3	0.33	0	0.05	+
+thymidylate synthase (FAD) activity	G4	1.28	0	0.05	+
+intein-mediated protein splicing	G2	0.02	0	0.08	+
+intein-mediated protein splicing	G3	0.19	0	0.08	+
+intein-mediated protein splicing	G4	1.11	0	0.08	+
+inorganic cation transmembrane transport	G2	0.07	0.01	0.23	
+inorganic cation transmembrane transport	G3	0.54	0.01	0.23	
+inorganic cation transmembrane transport	G4	0.93	0.01	0.23	
+heme a biosynthetic process	G2	0.22	0	0.08	+
+heme a biosynthetic process	G3	0.24	0	0.08	+
+heme a biosynthetic process	G4	1.08	0	0.08	+
+oxidoreductase activity, acting on NAD(P)H, heme protein as acceptor	G2	0.22	0	0.05	+
+oxidoreductase activity, acting on NAD(P)H, heme protein as acceptor	G3	0.24	0	0.05	+
+oxidoreductase activity, acting on NAD(P)H, heme protein as acceptor	G4	1.08	0	0.05	+
+DNA ligase (ATP) activity	G2	0.29	0	0.14	
+DNA ligase (ATP) activity	G3	0.73	0	0.14	
+DNA ligase (ATP) activity	G4	0.88	0	0.14	
+L-arabinose isomerase activity	G2	0.71	0.01	0.23	
+L-arabinose isomerase activity	G3	0.82	0.01	0.23	
+L-arabinose isomerase activity	G4	0.82	0.01	0.23	

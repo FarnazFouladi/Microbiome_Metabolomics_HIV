@@ -1,0 +1,21 @@
+Description	t1	cor_diff	p	BH_p
+carbamoyl-phosphate synthase (glutamine-hydrolyzing) activity	s__Blautia_obeum	0.483787844532023	9.38699720191791e-05	0.0701594561540619
+carbamoyl-phosphate synthase (glutamine-hydrolyzing) activity	s__Blautia_massiliensis	0.477126729090015	7.9669137415349e-05	0.0701594561540619
+carbamoyl-phosphate synthase (glutamine-hydrolyzing) activity	s__Oscillibacter_sp._ER4	-0.451608636445977	0.00037713134025746	0.0838182743046852
+carbamoyl-phosphate synthase (glutamine-hydrolyzing) activity	s__Simiaoa_sunii	-0.547156570002412	1.71340245082251e-05	0.0566379455904697
+carbamoyl-phosphate synthase (glutamine-hydrolyzing) activity	s__Oscillibacter_sp._MSJ_31	-0.431665111392102	0.000690116978110505	0.0891344997407774
+carbamoyl-phosphate synthase (glutamine-hydrolyzing) activity	s__Dysosmobacter_sp._BX15	-0.387138837695002	0.00129229871693962	0.0990763118135079
+carbamoyl-phosphate synthase (glutamine-hydrolyzing) activity	s__Intestinimonas_sp._MSJ_38	-0.430773712416608	0.000920674476370133	0.0933158992068922
+carbamoyl-phosphate synthase (glutamine-hydrolyzing) activity	s__Suilimivivens_aceti	-0.425303916881203	0.000368897181063763	0.0838182743046852
+carbamoyl-phosphate synthase (glutamine-hydrolyzing) activity	s__Dorea_sp._OM07_5	0.493181578991152	9.04183178231047e-05	0.0701594561540619
+carbamoyl-phosphate synthase (glutamine-hydrolyzing) activity	s__Dorea_sp._NSJ_36	0.427275331674037	0.000859156696277426	0.0921457481701598
+phosphoribosylformylglycinamidine cyclo-ligase activity	s__Prevotella_copri	-0.432524111742232	0.00104568704691667	0.0945515389416827
+phosphoribosylformylglycinamidine cyclo-ligase activity	s__Blautia_obeum	0.481511674924996	0.000100954075186145	0.0701594561540619
+phosphoribosylformylglycinamidine cyclo-ligase activity	s__Oscillibacter_sp._ER4	-0.428719401987817	0.000387189984299471	0.0838182743046852
+phosphoribosylformylglycinamidine cyclo-ligase activity	s__Prevotella_stercorea	-0.49699614857192	6.60353779476374e-05	0.0701594561540619
+phosphoribosylformylglycinamidine cyclo-ligase activity	s__Prevotella_hominis	-0.527765180153689	9.4137409092479e-05	0.0701594561540619
+phosphoribosylformylglycinamidine cyclo-ligase activity	s__Prevotella_sp._885	-0.471985624469543	0.000487358184543846	0.0839861394377018
+phosphoribosylformylglycinamidine cyclo-ligase activity	s__Phascolarctobacterium_succinatutens	-0.431569850844216	0.000769074221408685	0.0892380668440464
+phosphoribosylformylglycinamidine cyclo-ligase activity	s__Prevotella_sp._Marseille_P4119	-0.464430521190838	0.000816530634754225	0.0906001871382107
+phosphoribosylformylglycinamidine cyclo-ligase activity	s__Prevotella_pectinovora	-0.422221871354899	0.00061024400357407	0.0888826995760413
+phosphoribosylformylglycinamidine cyclo-ligase activity	s__Intestinimonas_sp._MSJ_38	-0.409470336001819	0.00108453814944601	0.0945515389416827

@@ -1,0 +1,100 @@
+Feature	study_condition	lfc	p_val	q_val	p_sig
+Protoporphyrinogen IX	G2	-0.84	0	0	***
+Protoporphyrinogen IX	G3	-0.84	0	0	***
+Protoporphyrinogen IX	G4	-1.24	0	0	***
+Furo[3,2-c]pyran-4-one	G2	-0.03	0.01	0.3	
+Furo[3,2-c]pyran-4-one	G3	-0.36	0.01	0.3	
+Furo[3,2-c]pyran-4-one	G4	-1.2	0.01	0.3	
+1,8,15-Heptadecatriene-11,13-diyne	G2	0	0	0	***
+1,8,15-Heptadecatriene-11,13-diyne	G3	-0.08	0	0	***
+1,8,15-Heptadecatriene-11,13-diyne	G4	-0.94	0	0	***
+Citreoviridin D	G2	0	0.01	0.3	
+Citreoviridin D	G3	-0.17	0.01	0.3	
+Citreoviridin D	G4	-0.84	0.01	0.3	
+DG(8:0/10:0/0:0)	G2	-0.37	0.01	0.3	
+DG(8:0/10:0/0:0)	G3	-0.37	0.01	0.3	
+DG(8:0/10:0/0:0)	G4	-0.84	0.01	0.3	
+Gluconolactone	G2	-0.02	0	0.08	+
+Gluconolactone	G3	-0.3	0	0.08	+
+Gluconolactone	G4	-0.81	0	0.08	+
+N-Acetylneuraminic acid	G2	-0.21	0.01	0.37	
+N-Acetylneuraminic acid	G3	-0.37	0.01	0.37	
+N-Acetylneuraminic acid	G4	-0.73	0.01	0.37	
+Adenine	G2	0	0	0.3	
+Adenine	G3	0.33	0	0.3	
+Adenine	G4	0.75	0	0.3	
+Adenosine	G2	0	0	0.3	
+Adenosine	G3	0.06	0	0.3	
+Adenosine	G4	0.78	0	0.3	
+Gingerglycolipid B	G2	0	0	0	***
+Gingerglycolipid B	G3	0.87	0	0	***
+Gingerglycolipid B	G4	1.25	0	0	***
+Octa-3,5-dienedioylcarnitine	G2	0	0.01	0.3	
+Octa-3,5-dienedioylcarnitine	G3	0.39	0.01	0.3	
+Octa-3,5-dienedioylcarnitine	G4	1.12	0.01	0.3	
+Stercobilinogen	G2	0	0	0	***
+Stercobilinogen	G3	1	0	0	***
+Stercobilinogen	G4	1.4	0	0	***
+Tryptophan butyl ester	G2	0	0	0.08	+
+Tryptophan butyl ester	G3	0.5	0	0.08	+
+Tryptophan butyl ester	G4	0.91	0	0.08	+
+PA(10:0/18:3(9,11,15)-OH(13))	G2	0.01	0	0.24	
+PA(10:0/18:3(9,11,15)-OH(13))	G3	0.75	0	0.24	
+PA(10:0/18:3(9,11,15)-OH(13))	G4	1.09	0	0.24	
+Gingerglycolipid A	G2	0.02	0	0	***
+Gingerglycolipid A	G3	0.86	0	0	***
+Gingerglycolipid A	G4	1.31	0	0	***
+Molindone	G2	0.02	0.01	0.37	
+Molindone	G3	0.6	0.01	0.37	
+Molindone	G4	0.74	0.01	0.37	
+Guanine	G2	0.06	0	0	***
+Guanine	G3	0.24	0	0	***
+Guanine	G4	0.86	0	0	***
+20-Carboxy-leukotriene B4	G2	0.12	0	0	***
+20-Carboxy-leukotriene B4	G3	0.54	0	0	***
+20-Carboxy-leukotriene B4	G4	1.21	0	0	***
+Pyridoxal	G2	0.16	0	0.3	
+Pyridoxal	G3	0.41	0	0.3	
+Pyridoxal	G4	1	0	0.3	
+Cercosporamide	G2	0.17	0	0.14	
+Cercosporamide	G3	0.17	0	0.14	
+Cercosporamide	G4	1.16	0	0.14	
+Monascoflavin	G2	0.19	0	0.19	
+Monascoflavin	G3	0.66	0	0.19	
+Monascoflavin	G4	0.66	0	0.19	
+Ecgonine	G2	0.24	0	0.3	
+Ecgonine	G3	0.52	0	0.3	
+Ecgonine	G4	0.63	0	0.3	
+PA(18:3(9,11,15)-OH(13)/10:0)	G2	0.24	0	0	***
+PA(18:3(9,11,15)-OH(13)/10:0)	G3	0.78	0	0	***
+PA(18:3(9,11,15)-OH(13)/10:0)	G4	1.19	0	0	***
+PA(20:1/6 keto-PGF1alpha)	G2	0.27	0	0	***
+PA(20:1/6 keto-PGF1alpha)	G3	0.59	0	0	***
+PA(20:1/6 keto-PGF1alpha)	G4	0.97	0	0	***
+alpha-Micropteroxanthin B	G2	0.28	0.01	0.3	
+alpha-Micropteroxanthin B	G3	0.35	0.01	0.3	
+alpha-Micropteroxanthin B	G4	0.6	0.01	0.3	
+Arecoline	G2	0.31	0.01	0.3	
+Arecoline	G3	0.42	0.01	0.3	
+Arecoline	G4	0.57	0.01	0.3	
+Esculentic acid (Phytolacca)	G2	0.45	0	0	***
+Esculentic acid (Phytolacca)	G3	0.89	0	0	***
+Esculentic acid (Phytolacca)	G4	1.38	0	0	***
+PG(20:4/TXB2)	G2	0.5	0	0	***
+PG(20:4/TXB2)	G3	0.61	0	0	***
+PG(20:4/TXB2)	G4	1.21	0	0	***
+N1,N10-Dicoumaroylspermidine	G2	0.71	0	0	***
+N1,N10-Dicoumaroylspermidine	G3	1.13	0	0	***
+N1,N10-Dicoumaroylspermidine	G4	1.61	0	0	***
+Drospirenone	G2	0.77	0.01	0.3	
+Drospirenone	G3	1.05	0.01	0.3	
+Drospirenone	G4	1.33	0.01	0.3	
+Austalide H	G2	0.83	0.01	0.33	
+Austalide H	G3	0.83	0.01	0.33	
+Austalide H	G4	0.83	0.01	0.33	
+strophanthidin	G2	1.02	0	0.3	
+strophanthidin	G3	1.04	0	0.3	
+strophanthidin	G4	1.17	0	0.3	
+Neoandrographolide	G2	1.37	0.01	0.37	
+Neoandrographolide	G3	1.37	0.01	0.37	
+Neoandrographolide	G4	1.85	0.01	0.37	

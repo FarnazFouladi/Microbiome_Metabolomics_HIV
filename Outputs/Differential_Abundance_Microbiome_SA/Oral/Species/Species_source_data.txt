@@ -1,0 +1,10 @@
+Feature	study_condition	lfc	p_val	q_val	p_sig
+Candidatus Nanosynbacter sp. HMT 352	G2	-0.2	0	0.23	
+Candidatus Nanosynbacter sp. HMT 352	G3	-0.81	0	0.23	
+Candidatus Nanosynbacter sp. HMT 352	G4	-1.51	0	0.23	
+Candidatus Nanosynbacter sp. TM7 057	G2	-0.15	0.01	0.31	
+Candidatus Nanosynbacter sp. TM7 057	G3	-0.18	0.01	0.31	
+Candidatus Nanosynbacter sp. TM7 057	G4	-1.23	0.01	0.31	
+Aggregatibacter sp. oral taxon 458	G2	0	0.01	0.31	
+Aggregatibacter sp. oral taxon 458	G3	0.38	0.01	0.31	
+Aggregatibacter sp. oral taxon 458	G4	1.36	0.01	0.31	

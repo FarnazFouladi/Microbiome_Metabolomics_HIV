@@ -1,0 +1,112 @@
+Feature	study_condition	lfc	p_val	q_val	p_sig
+MG(14:1/0:0/0:0)	G2	-0.44	0	0	***
+MG(14:1/0:0/0:0)	G3	-0.65	0	0	***
+MG(14:1/0:0/0:0)	G4	-1.2	0	0	***
+Sorbitan laurate	G2	-0.57	0.01	0.21	
+Sorbitan laurate	G3	-0.71	0.01	0.21	
+Sorbitan laurate	G4	-1.08	0.01	0.21	
+Sorbitan palmitate	G2	-0.52	0.01	0.22	
+Sorbitan palmitate	G3	-0.67	0.01	0.22	
+Sorbitan palmitate	G4	-0.95	0.01	0.22	
+Butyl butyrate	G2	-0.57	0	0.1	
+Butyl butyrate	G3	-0.7	0	0.1	
+Butyl butyrate	G4	-0.91	0	0.1	
+N-Palmitoyl Cysteine	G2	-0.54	0.01	0.2	
+N-Palmitoyl Cysteine	G3	-0.66	0.01	0.2	
+N-Palmitoyl Cysteine	G4	-0.89	0.01	0.2	
+Pyrogallol-2-O-sulphate	G2	-0.33	0	0.05	+
+Pyrogallol-2-O-sulphate	G3	-0.53	0	0.05	+
+Pyrogallol-2-O-sulphate	G4	-0.87	0	0.05	+
+alpha-CEHC glucuronide	G2	-0.26	0.01	0.16	
+alpha-CEHC glucuronide	G3	-0.26	0.01	0.16	
+alpha-CEHC glucuronide	G4	-0.87	0.01	0.16	
+Sinapic acid	G2	0	0	0	***
+Sinapic acid	G3	0	0	0	***
+Sinapic acid	G4	-0.86	0	0	***
+1,2,3,4-Tetrahydroisoquinoline-3-carboxylic acid	G2	-0.32	0	0	***
+1,2,3,4-Tetrahydroisoquinoline-3-carboxylic acid	G3	-0.5	0	0	***
+1,2,3,4-Tetrahydroisoquinoline-3-carboxylic acid	G4	-0.84	0	0	***
+Oleoyl glycine	G2	-0.37	0	0.08	+
+Oleoyl glycine	G3	-0.61	0	0.08	+
+Oleoyl glycine	G4	-0.84	0	0.08	+
+Madlongiside C	G2	-0.14	0	0.16	
+Madlongiside C	G3	-0.15	0	0.16	
+Madlongiside C	G4	-0.8	0	0.16	
+Thromboxane B3	G2	-0.39	0.01	0.17	
+Thromboxane B3	G3	-0.4	0.01	0.17	
+Thromboxane B3	G4	-0.79	0.01	0.17	
+3-Methoxy-4-hydroxyphenylethyleneglycol sulfate	G2	-0.26	0	0.08	+
+3-Methoxy-4-hydroxyphenylethyleneglycol sulfate	G3	-0.26	0	0.08	+
+3-Methoxy-4-hydroxyphenylethyleneglycol sulfate	G4	-0.77	0	0.08	+
+alpha-CEHC	G2	-0.23	0.01	0.16	
+alpha-CEHC	G3	-0.33	0.01	0.16	
+alpha-CEHC	G4	-0.75	0.01	0.16	
+Velaresol	G2	-0.04	0	0.08	+
+Velaresol	G3	-0.04	0	0.08	+
+Velaresol	G4	-0.69	0	0.08	+
+2-Benzoxazolol	G2	-0.22	0.01	0.2	
+2-Benzoxazolol	G3	-0.22	0.01	0.2	
+2-Benzoxazolol	G4	-0.56	0.01	0.2	
+Diphenoquinone	G2	-0.1	0	0.17	
+Diphenoquinone	G3	-0.21	0	0.17	
+Diphenoquinone	G4	-0.42	0	0.17	
+4-Hydroxybenzoic acid	G2	-0.07	0.01	0.21	
+4-Hydroxybenzoic acid	G3	-0.15	0.01	0.21	
+4-Hydroxybenzoic acid	G4	-0.32	0.01	0.21	
+2,8-Dihydroxyquinoline-betaglucuronide	G2	0	0	0	***
+2,8-Dihydroxyquinoline-betaglucuronide	G3	0.31	0	0	***
+2,8-Dihydroxyquinoline-betaglucuronide	G4	0.88	0	0	***
+Androsterone sulfate	G2	0	0.01	0.17	
+Androsterone sulfate	G3	0.11	0.01	0.17	
+Androsterone sulfate	G4	0.5	0.01	0.17	
+Pregnenolone-3,21-disulfate	G2	0	0.01	0.17	
+Pregnenolone-3,21-disulfate	G3	0	0.01	0.17	
+Pregnenolone-3,21-disulfate	G4	0.51	0.01	0.17	
+p-Cresol glucuronide	G2	0	0.01	0.17	
+p-Cresol glucuronide	G3	0.16	0.01	0.17	
+p-Cresol glucuronide	G4	0.74	0.01	0.17	
+Phenylacetylglutamine	G2	0.09	0	0.15	
+Phenylacetylglutamine	G3	0.09	0	0.15	
+Phenylacetylglutamine	G4	0.54	0	0.15	
+N-Phenylacetylglutamic acid	G2	0.11	0	0.08	+
+N-Phenylacetylglutamic acid	G3	0.11	0	0.08	+
+N-Phenylacetylglutamic acid	G4	0.7	0	0.08	+
+2-Indolecarboxylic acid	G2	0.14	0	0	***
+2-Indolecarboxylic acid	G3	0.34	0	0	***
+2-Indolecarboxylic acid	G4	0.64	0	0	***
+3,17-Androstanediol glucuronide	G2	0.19	0.01	0.16	
+3,17-Androstanediol glucuronide	G3	0.34	0.01	0.16	
+3,17-Androstanediol glucuronide	G4	0.49	0.01	0.16	
+5-Hydroxy-6-methoxyindole glucuronide	G2	0.22	0	0	***
+5-Hydroxy-6-methoxyindole glucuronide	G3	0.89	0	0	***
+5-Hydroxy-6-methoxyindole glucuronide	G4	2.03	0	0	***
+6-Hydroxy-5-methoxyindole glucuronide	G2	0.27	0	0	***
+6-Hydroxy-5-methoxyindole glucuronide	G3	0.91	0	0	***
+6-Hydroxy-5-methoxyindole glucuronide	G4	1.89	0	0	***
+Stercobilin	G2	0.28	0	0.14	
+Stercobilin	G3	0.53	0	0.14	
+Stercobilin	G4	1.04	0	0.14	
+Hippuric acid sulfate	G2	0.3	0	0	***
+Hippuric acid sulfate	G3	0.83	0	0	***
+Hippuric acid sulfate	G4	2.02	0	0	***
+3-Methyloxindole	G2	0.35	0	0.05	+
+3-Methyloxindole	G3	0.54	0	0.05	+
+3-Methyloxindole	G4	0.98	0	0.05	+
+1-Hydroxyacorenone	G2	0.51	0	0.1	
+1-Hydroxyacorenone	G3	0.71	0	0.1	
+1-Hydroxyacorenone	G4	0.98	0	0.1	
+Shinanolone	G2	0.53	0	0.1	
+Shinanolone	G3	0.71	0	0.1	
+Shinanolone	G4	1.05	0	0.1	
+HPAA sulfate	G2	0.61	0	0	***
+HPAA sulfate	G3	1.46	0	0	***
+HPAA sulfate	G4	2.6	0	0	***
+3,4-Dihydroxyphenylvaleric acid	G2	0.64	0.01	0.2	
+3,4-Dihydroxyphenylvaleric acid	G3	0.77	0.01	0.2	
+3,4-Dihydroxyphenylvaleric acid	G4	1.14	0.01	0.2	
+6-Hydroxyindoxyl sulfate	G2	0.66	0	0	***
+6-Hydroxyindoxyl sulfate	G3	1.35	0	0	***
+6-Hydroxyindoxyl sulfate	G4	2.48	0	0	***
+3-Methylcatechol 1-sulfate	G2	0.9	0	0	***
+3-Methylcatechol 1-sulfate	G3	0.99	0	0	***
+3-Methylcatechol 1-sulfate	G4	2.1	0	0	***

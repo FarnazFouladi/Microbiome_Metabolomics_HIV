@@ -1,0 +1,86 @@
+Description	t1	cor_diff	p	BH_p
+rRNA modification	s__Haemophilus_parainfluenzae	0.453454891383522	0.000623206783057066	0.0991909390654882
+rRNA (adenine-N6,N6-)-dimethyltransferase activity	s__Haemophilus_parainfluenzae	0.467204306596744	0.00038858388260905	0.0810683063719999
+alanine dehydrogenase activity	s__Haemophilus_parainfluenzae	0.539975383832167	0.000149050458882285	0.0593240113009411
+adenyl-nucleotide exchange factor activity	s__Haemophilus_parainfluenzae	0.561658246813329	2.46790450387299e-05	0.0330441560288897
+septin ring assembly	s__Haemophilus_parainfluenzae	0.459920436845282	0.00044677089511188	0.0849681282400046
+single-stranded DNA binding	s__Haemophilus_parainfluenzae	0.506856886418417	9.91777008714884e-05	0.0587102689707388
+RNA binding	s__Haemophilus_parainfluenzae	0.437964470223703	0.000556879315394224	0.0916050918535359
+aminoacyl-tRNA hydrolase activity	s__Haemophilus_parainfluenzae	0.462745534645122	0.000419861687748792	0.0835326175389404
+dCMP deaminase activity	s__Haemophilus_parainfluenzae	0.480529883935946	0.000272279734486902	0.0707311884060425
+dephospho-CoA kinase activity	s__Haemophilus_parainfluenzae	0.480683242298408	0.000419492919541514	0.0835326175389404
+glucosamine-6-phosphate deaminase activity	s__Haemophilus_parainfluenzae	0.471241598631443	0.00046636309625678	0.0851872563639132
+L-lactate dehydrogenase activity	s__Haemophilus_parainfluenzae	0.679550159652779	2.32285252654345e-07	0.0068396392644072
+methylenetetrahydrofolate dehydrogenase (NADP+) activity	s__Haemophilus_parainfluenzae	0.510387743389486	0.000170610386057285	0.0598050335411519
+RNA-DNA hybrid ribonuclease activity	s__Haemophilus_parainfluenzae	0.568259773627965	1.79756897176626e-05	0.032500549742079
+orotate phosphoribosyltransferase activity	s__Haemophilus_parainfluenzae	0.534727322824404	6.24980818488287e-05	0.0507115617580138
+pantetheine-phosphate adenylyltransferase activity	s__Haemophilus_parainfluenzae	0.494197534564257	0.000166672048208701	0.0593240113009411
+phosphoribosylaminoimidazolesuccinocarboxamide synthase activity	s__Haemophilus_parainfluenzae	0.49025488491701	0.000307356476451237	0.0707311884060425
+purine-nucleoside phosphorylase activity	s__Haemophilus_parainfluenzae	0.586193117854804	1.12506675671171e-05	0.0323918001290198
+pyrroline-5-carboxylate reductase activity	s__Haemophilus_parainfluenzae	0.561945132990566	2.89607435316797e-05	0.033777464364207
+ribose phosphate diphosphokinase activity	s__Haemophilus_parainfluenzae	0.500260366208184	0.000164975638358637	0.0593240113009411
+ribulose-phosphate 3-epimerase activity	s__Haemophilus_parainfluenzae	0.485115011629521	0.000381788389729002	0.0802982795397891
+tyrosine-tRNA ligase activity	s__Haemophilus_parainfluenzae	0.444414084702997	0.000478152933032852	0.0855336892037184
+uracil DNA N-glycosylase activity	s__Haemophilus_parainfluenzae	0.491273413621859	0.000254471719673961	0.0707311884060425
+uracil phosphoribosyltransferase activity	s__Haemophilus_parainfluenzae	0.484629550020278	0.00040009263885813	0.0812463982839838
+manganese ion transmembrane transporter activity	s__Haemophilus_parainfluenzae	0.498068081322681	0.000222731210758467	0.0671612393971571
+extrachromosomal circular DNA	s__Haemophilus_parainfluenzae	0.477787283499719	0.000510854474036824	0.0884829999294958
+septin ring	s__Haemophilus_parainfluenzae	0.459920436845282	0.00044677089511188	0.0849681282400046
+regulation of carbohydrate metabolic process	s__Haemophilus_parainfluenzae	0.613412436273272	7.35712367285831e-06	0.0323918001290198
+purine nucleotide biosynthetic process	s__Haemophilus_parainfluenzae	0.464210815427948	0.000418426112920979	0.0835326175389404
+pyrimidine nucleotide metabolic process	s__Haemophilus_parainfluenzae	0.480529883935946	0.000272279734486902	0.0707311884060425
+uracil salvage	s__Haemophilus_parainfluenzae	0.484629550020278	0.00040009263885813	0.0812463982839838
+CTP biosynthetic process	s__Haemophilus_parainfluenzae	0.469450907900515	0.000554006293149282	0.0916050918535359
+rRNA processing	s__Haemophilus_parainfluenzae	0.527639549857415	2.38162661262115e-05	0.0330441560288897
+N-terminal protein amino acid acetylation	s__Haemophilus_parainfluenzae	0.60014707290361	8.77986501958027e-06	0.0323918001290198
+RNA methyltransferase activity	s__Haemophilus_parainfluenzae	0.503647612127392	0.000199371187715887	0.0659605013740932
+tRNA (guanine-N7-)-methyltransferase activity	s__Haemophilus_parainfluenzae	0.527521093629395	0.000113692795092853	0.0587102689707388
+nucleotidase activity	s__Haemophilus_parainfluenzae	-0.507429446187852	0.00024596662587575	0.0707311884060425
+single-stranded DNA 3'-5' exodeoxyribonuclease activity	s__Haemophilus_parainfluenzae	-0.55443845999067	6.21203848843557e-05	0.0507115617580138
+UDP-N-acetylmuramate dehydrogenase activity	s__Haemophilus_parainfluenzae	0.491361409745872	0.000189064320730309	0.0635263194318533
+glycerate kinase activity	s__Haemophilus_parainfluenzae	0.513483983844643	0.000136948276258515	0.0593240113009411
+homoserine O-succinyltransferase activity	s__Haemophilus_parainfluenzae	0.449109788098794	0.000518512130591647	0.0887650563097153
+nucleoside metabolic process	s__Haemophilus_parainfluenzae	0.485743596949327	0.000114230069681913	0.0587102689707388
+ribonucleoside monophosphate biosynthetic process	s__Haemophilus_parainfluenzae	0.473917254478524	0.00049390917756958	0.0870847648714747
+nucleotide biosynthetic process	s__Haemophilus_parainfluenzae	0.498128154237822	0.000156767552999328	0.0593240113009411
+quorum sensing	s__Haemophilus_parainfluenzae	0.506952834998802	0.000220375289475491	0.0671612393971571
+disulfide oxidoreductase activity	s__Haemophilus_parainfluenzae	-0.377351897343504	0.00050080352042597	0.0873392389604705
+chromate transmembrane transporter activity	s__Haemophilus_parainfluenzae	-0.558802501599187	3.08399371024709e-05	0.033777464364207
+biotin transmembrane transporter activity	s__Haemophilus_parainfluenzae	0.551148103356893	1.36344432940377e-05	0.0323918001290198
+chromate transport	s__Haemophilus_parainfluenzae	-0.558802501599187	3.08399371024709e-05	0.033777464364207
+biotin transport	s__Haemophilus_parainfluenzae	0.551148103356893	1.36344432940377e-05	0.0323918001290198
+phospholipid transport	s__Haemophilus_parainfluenzae	-0.43808053939393	0.00029605864957694	0.0707311884060425
+coenzyme A biosynthetic process	s__Haemophilus_parainfluenzae	0.523914602682612	8.53340492960363e-05	0.0558369129227064
+acyl-[acyl-carrier-protein] hydrolase activity	s__Haemophilus_parainfluenzae	0.531061664602087	7.71831371355552e-05	0.055191097688086
+tRNA (adenine-N1-)-methyltransferase activity	s__Haemophilus_parainfluenzae	0.572020675656449	1.87641143017607e-05	0.032500549742079
+transferase activity, transferring alkyl or aryl (other than methyl) groups	s__Haemophilus_parainfluenzae	0.448223031722781	0.000305016179515065	0.0707311884060425
+racemase and epimerase activity, acting on carbohydrates and derivatives	s__Haemophilus_parainfluenzae	0.483067717774666	0.000293454181274343	0.0707311884060425
+L-methionine biosynthetic process from homoserine via O-succinyl-L-homoserine and cystathionine	s__Haemophilus_parainfluenzae	0.449109788098794	0.000518512130591647	0.0887650563097153
+hexose metabolic process	s__Haemophilus_parainfluenzae	0.485207941934358	0.000366498229038254	0.0781995677828362
+tryptophan catabolic process to kynurenine	s__Haemophilus_parainfluenzae	0.533964789789517	0.000115101528760342	0.0587102689707388
+glycerol catabolic process	s__Haemophilus_parainfluenzae	0.45937867525642	0.000275308780114632	0.0707311884060425
+NAD metabolic process	s__Haemophilus_parainfluenzae	0.502782050971718	3.21198506434979e-05	0.033777464364207
+cellular manganese ion homeostasis	s__Haemophilus_parainfluenzae	0.498068081322681	0.000222731210758467	0.0671612393971571
+organic acid phosphorylation	s__Haemophilus_parainfluenzae	0.579339388108749	1.57980459114843e-05	0.0323918001290198
+riboflavin transmembrane transporter activity	s__Haemophilus_parainfluenzae	0.492839223789132	0.000163830706139482	0.0593240113009411
+riboflavin transport	s__Haemophilus_parainfluenzae	0.492839223789132	0.000163830706139482	0.0593240113009411
+ribonuclease D activity	s__Haemophilus_parainfluenzae	-0.667461911018464	0.000157055146445161	0.0593240113009411
+arginine binding	s__Haemophilus_parainfluenzae	0.479536493522185	0.000159721470522617	0.0593240113009411
+periplasmic space	s__Haemophilus_parainfluenzae	-0.380161212324113	0.000312575956351973	0.0707984541137218
+protein homodimerization activity	s__Haemophilus_parainfluenzae	0.568312048854279	3.20931821233958e-05	0.033777464364207
+vitamin B6 biosynthetic process	s__Haemophilus_parainfluenzae	0.511330665302583	6.62242554829332e-05	0.0513150842814465
+pyridoxal phosphate biosynthetic process	s__Haemophilus_parainfluenzae	0.495488665213752	0.000102898984807538	0.0587102689707388
+peptidoglycan binding	s__Haemophilus_parainfluenzae	-0.485420522055034	0.000167223397452135	0.0593240113009411
+L-alanine catabolic process	s__Haemophilus_parainfluenzae	0.539975383832167	0.000149050458882285	0.0593240113009411
+S-ribosylhomocysteine lyase activity	s__Haemophilus_parainfluenzae	0.488150775549712	0.00039985744552108	0.0812463982839838
+ribonuclease M5 activity	s__Haemophilus_parainfluenzae	0.455858936544145	0.000264678445881652	0.0707311884060425
+negative regulation of transcription, DNA-templated	s__Haemophilus_parainfluenzae	0.562738368785126	7.00482792806118e-06	0.0323918001290198
+negative regulation of purine nucleobase metabolic process	s__Haemophilus_parainfluenzae	0.470650321293475	0.000263970394562618	0.0707311884060425
+metal ion transmembrane transporter activity	s__Haemophilus_parainfluenzae	0.390167528674666	0.00057009982922159	0.0932109834558989
+transition metal ion binding	s__Haemophilus_parainfluenzae	0.460042402948518	0.000307474685548427	0.0707311884060425
+protein dimerization activity	s__Haemophilus_parainfluenzae	0.499571891909018	7.01863313243753e-05	0.0529906801499033
+phosphoenolpyruvate-glycerone phosphotransferase activity	s__Haemophilus_parainfluenzae	0.45937867525642	0.000275308780114632	0.0707311884060425
+chaperone binding	s__Haemophilus_parainfluenzae	0.549650936041052	5.78926860185041e-05	0.0501367688180839
+chromosome separation	s__Haemophilus_parainfluenzae	0.479766498916959	8.05983087311155e-05	0.055191097688086
+lipoteichoic acid biosynthetic process	s__Haemophilus_parainfluenzae	0.533115246997572	0.000106019968074799	0.0587102689707388
+CAAX-box protein processing	s__Haemophilus_parainfluenzae	0.473388373131454	0.00031245168152525	0.0707984541137218

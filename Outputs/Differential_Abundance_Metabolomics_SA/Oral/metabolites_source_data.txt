@@ -1,0 +1,10 @@
+Feature	study_condition	lfc	p_val	q_val	p_sig
+Undec-5-enedioylcarnitine	G2	-0.2	0	0.53	
+Undec-5-enedioylcarnitine	G3	-0.24	0	0.53	
+Undec-5-enedioylcarnitine	G4	-1	0	0.53	
+Dodeca-3,6,9-trienoylcarnitine	G2	-0.16	0.01	0.53	
+Dodeca-3,6,9-trienoylcarnitine	G3	-0.27	0.01	0.53	
+Dodeca-3,6,9-trienoylcarnitine	G4	-0.88	0.01	0.53	
+4,1-Benzoxazepine	G2	0.34	0.01	0.66	
+4,1-Benzoxazepine	G3	0.39	0.01	0.66	
+4,1-Benzoxazepine	G4	0.59	0.01	0.66	

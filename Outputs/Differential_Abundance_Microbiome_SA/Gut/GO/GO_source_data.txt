@@ -1,0 +1,91 @@
+Feature	study_condition	lfc	p_val	q_val	p_sig
+killing of cells of other organism	G2	0	0	0.05	+
+killing of cells of other organism	G3	0	0	0.05	+
+killing of cells of other organism	G4	-1.1	0	0.05	+
+defense response to Gram-negative bacterium	G2	0	0	0.05	+
+defense response to Gram-negative bacterium	G3	0	0	0.05	+
+defense response to Gram-negative bacterium	G4	-1.1	0	0.05	+
+actin filament binding	G2	-0.34	0	0	***
+actin filament binding	G3	-1.09	0	0	***
+actin filament binding	G4	-1.09	0	0	***
+lipoate biosynthetic process	G2	-0.2	0.01	0.12	
+lipoate biosynthetic process	G3	-0.29	0.01	0.12	
+lipoate biosynthetic process	G4	-1.08	0.01	0.12	
+lipoate synthase activity	G2	-0.2	0	0.06	+
+lipoate synthase activity	G3	-0.29	0	0.06	+
+lipoate synthase activity	G4	-1.08	0	0.06	+
+dihydrolipoyllysine-residue succinyltransferase activity	G2	0	0	0.05	+
+dihydrolipoyllysine-residue succinyltransferase activity	G3	-0.31	0	0.05	+
+dihydrolipoyllysine-residue succinyltransferase activity	G4	-0.99	0	0.05	+
+chitosanase activity	G2	0	0	0.05	+
+chitosanase activity	G3	-0.42	0	0.05	+
+chitosanase activity	G4	-0.89	0	0.05	+
+toxin activity	G2	-0.27	0	0.09	+
+toxin activity	G3	-0.52	0	0.09	+
+toxin activity	G4	-0.87	0	0.09	+
+cytolysis by virus of host cell	G2	0	0	0.09	+
+cytolysis by virus of host cell	G3	-0.39	0	0.09	+
+cytolysis by virus of host cell	G4	-0.86	0	0.09	+
+photosystem II oxygen evolving complex	G2	-0.07	0	0.09	+
+photosystem II oxygen evolving complex	G3	-0.19	0	0.09	+
+photosystem II oxygen evolving complex	G4	-0.83	0	0.09	+
+transcription by RNA polymerase III	G2	-0.34	0.01	0.13	
+transcription by RNA polymerase III	G3	-0.81	0.01	0.13	
+transcription by RNA polymerase III	G4	-0.81	0.01	0.13	
+oxidoreductase activity, oxidizing metal ions	G2	0	0	0.06	+
+oxidoreductase activity, oxidizing metal ions	G3	-0.28	0	0.06	+
+oxidoreductase activity, oxidizing metal ions	G4	-0.77	0	0.06	+
+glutathione synthase activity	G2	0	0	0.06	+
+glutathione synthase activity	G3	-0.13	0	0.06	+
+glutathione synthase activity	G4	-0.76	0	0.06	+
+arsenate reductase (glutaredoxin) activity	G2	0	0.01	0.1	
+arsenate reductase (glutaredoxin) activity	G3	0	0.01	0.1	
+arsenate reductase (glutaredoxin) activity	G4	-0.76	0.01	0.1	
+NAD(P)+ transhydrogenase activity	G2	-0.75	0	0.06	+
+NAD(P)+ transhydrogenase activity	G3	-0.75	0	0.06	+
+NAD(P)+ transhydrogenase activity	G4	-0.75	0	0.06	+
+peptidoglycan glycosyltransferase activity	G2	0	0	0.05	+
+peptidoglycan glycosyltransferase activity	G3	0.23	0	0.05	+
+peptidoglycan glycosyltransferase activity	G4	0.81	0	0.05	+
+mediator complex	G2	0	0	0.06	+
+mediator complex	G3	0.33	0	0.06	+
+mediator complex	G4	0.84	0	0.06	+
+phospholipid metabolic process	G2	0.15	0	0	***
+phospholipid metabolic process	G3	0.39	0	0	***
+phospholipid metabolic process	G4	1.04	0	0	***
+host cell cytoplasm	G2	0.2	0	0.03	*
+host cell cytoplasm	G3	0.31	0	0.03	*
+host cell cytoplasm	G4	0.99	0	0.03	*
+calcium-dependent cysteine-type endopeptidase activity	G2	0.21	0	0.06	+
+calcium-dependent cysteine-type endopeptidase activity	G3	0.48	0	0.06	+
+calcium-dependent cysteine-type endopeptidase activity	G4	0.85	0	0.06	+
+virus tail	G2	0.28	0	0	***
+virus tail	G3	0.28	0	0	***
+virus tail	G4	0.93	0	0	***
+nucleic acid phosphodiester bond hydrolysis	G2	0.44	0	0	***
+nucleic acid phosphodiester bond hydrolysis	G3	0.44	0	0	***
+nucleic acid phosphodiester bond hydrolysis	G4	1.06	0	0	***
+diphosphomevalonate decarboxylase activity	G2	0.63	0	0.05	+
+diphosphomevalonate decarboxylase activity	G3	0.63	0	0.05	+
+diphosphomevalonate decarboxylase activity	G4	0.87	0	0.05	+
+isopentenyl diphosphate biosynthetic process, mevalonate pathway	G2	0.63	0	0.05	+
+isopentenyl diphosphate biosynthetic process, mevalonate pathway	G3	0.63	0	0.05	+
+isopentenyl diphosphate biosynthetic process, mevalonate pathway	G4	0.87	0	0.05	+
+nickel-transporting ATPase activity	G2	0.69	0	0.06	+
+nickel-transporting ATPase activity	G3	0.87	0	0.06	+
+nickel-transporting ATPase activity	G4	0.87	0	0.06	+
+response to nickel cation	G2	0.7	0	0.06	+
+response to nickel cation	G3	0.89	0	0.06	+
+response to nickel cation	G4	0.89	0	0.06	+
+electron transport coupled proton transport	G2	0.85	0	0.08	+
+electron transport coupled proton transport	G3	0.85	0	0.08	+
+electron transport coupled proton transport	G4	0.85	0	0.08	+
+glycerol-3-phosphate transmembrane transport	G2	0.88	0	0.05	+
+glycerol-3-phosphate transmembrane transport	G3	0.88	0	0.05	+
+glycerol-3-phosphate transmembrane transport	G4	0.88	0	0.05	+
+gamma-glutamylaminecyclotransferase activity	G2	0.93	0	0.05	+
+gamma-glutamylaminecyclotransferase activity	G3	0.93	0	0.05	+
+gamma-glutamylaminecyclotransferase activity	G4	0.93	0	0.05	+
+zymogen activation	G2	0.96	0	0.05	+
+zymogen activation	G3	0.96	0	0.05	+
+zymogen activation	G4	0.96	0	0.05	+
