@@ -75,6 +75,11 @@ library(ComplexHeatmap)
 col_fun <- colorRamp2(c(min(datasets_sig_long), max(datasets_sig_long)), c("white", "red"))
 
 datasets_sig_long <- datasets_sig_long[names(sort(rowSums(datasets_sig_long), decreasing = T)), ]
+
+# Save source data
+write.table(datasets_sig_long, 
+            file.path("Outputs/External_Dataset","Genus_source_data.txt"), sep = "\t", row.names = T, quote = F)
+
 hm <- Heatmap(as.matrix(datasets_sig_long),
   row_names_gp = gpar(fontsize = 40, fontface = "italic"),
   column_names_gp = gpar(fontsize = 40),

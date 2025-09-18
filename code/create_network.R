@@ -5,9 +5,6 @@ create_network <- function(mat,pval_mat,
                            cexHubs = 2,
                            cexLabels = 4,
                            cexHubLabels = 4,
-                           cexTitle = 3.8,
-                           legend_cex = 3,
-                           association_cex = 3,
                            outputdir = output_dir,
                            prefix = "status",
                            showLabel = TRUE) {
@@ -45,6 +42,7 @@ create_network <- function(mat,pval_mat,
   } else {
     cols <- "#D95F02"
     nodeCol <- rep(datasets[1], nrow(mat))
+  
     names(nodeCol) <- rownames(mat)
     p <- "taxa "
   }
@@ -52,7 +50,7 @@ create_network <- function(mat,pval_mat,
   # Edges (if adjusted p is between 0.1 and 0.05, replace the solid line with dashed line)
   edge_lty <- ifelse(pval_mat < 0.05, 1, 2)
 
-  pdf(file.path(outputdir, paste0(prefix, "_network_diff.pdf")), 11, 10)
+  pdf(file.path(outputdir, paste0(prefix, "_network_diff.pdf")), 3.1, 3.1)
   plot(props,
     repulsion = repulsion,
     shortenLabels = "simple",
@@ -66,7 +64,7 @@ create_network <- function(mat,pval_mat,
     nodeTransp = 30,
     lty = edge_lty,
     sameClustCol = TRUE,
-    labelScale = TRUE,
+    labelScale = FALSE,
     nodeSize = "degree",
     cexNodes = cexNodes,
     cexHubs = cexHubs,
@@ -78,7 +76,8 @@ create_network <- function(mat,pval_mat,
     hubBorderCol = "gray40",
     esize = 1,
     asize = 1,
-    edgeWidth = 1.5
+    edgeWidth = 1.5,
+    label.font = 2
   )
 
   dev.off()

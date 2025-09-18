@@ -5,7 +5,7 @@ dir.create(output_dir)
 
 # Create a heatmap to show LFC from differential abundance analysis for 
 # Pre-HIV versus Non-HIV and trend analysis for sexual activity groups
-compare_results <- function(df_sc, df_sa, data_module) {
+compare_results <- function(df_sc, df_sa, data_module,sample_type) {
   if (any(grepl("passed_ss", colnames(df_sc)))) {
     # Subset to significant features
     df_sc_sig <- df_sc %>%
@@ -66,6 +66,16 @@ compare_results <- function(df_sc, df_sa, data_module) {
     column_to_rownames("Feature") %>%
     dplyr::select(grep("q_", colnames(.)))
 
+  # Save source data
+  write.table(df_all %>%
+                 column_to_rownames("Feature") %>%
+                 dplyr::select(grep("lfc", colnames(.)),grep("q_", colnames(.))) %>%
+              dplyr::rename( lfc_preHIVNonHIV = lfc_statussc,
+                             q_preHIVNonHIV = q_statussc), 
+              file.path(output_dir, paste0(tolower(sample_type),"_",tolower(data_module), "_source_data.txt")), sep = "\t", row.names = T, quote = F)
+  
+  
+  
   # Heatmap
   col_fun <- colorRamp2(c(min(df_lfc), 0, max(df_lfc)), c("darkgreen", "white", "red"))
   hm1 <- Heatmap(as.matrix(df_lfc),
@@ -111,7 +121,7 @@ df_sa <- read.table(file.path("Outputs/Differential_Abundance_Microbiome_SA/Gut/
   sep = "\t", header = TRUE, check.names = F, quote = "", comment.char = ""
 )
 
-hm <- compare_results(df_sc, df_sa, data_module = "Species")
+hm <- compare_results(df_sc, df_sa, data_module = "Species",sample_type = "Gut")
 pdf(file.path(output_dir, paste0("gut_species", "_heatmap.pdf")), 40, 35)
 draw(hm)
 dev.off()
@@ -124,7 +134,7 @@ df_sa <- read.table(file.path("Outputs/Differential_Abundance_Microbiome_SA/Gut/
   sep = "\t", header = TRUE, check.names = F, quote = "", comment.char = ""
 )
 
-hm <- compare_results(df_sc, df_sa, data_module = "GO")
+hm <- compare_results(df_sc, df_sa, data_module = "GO", sample_type = "Gut")
 pdf(file.path(output_dir, paste0("gut_go", "_heatmap.pdf")), 100, 100)
 draw(hm)
 dev.off()
@@ -139,7 +149,7 @@ df_sa <- read.table(file.path("Outputs/Differential_Abundance_Microbiome_SA/Oral
   sep = "\t", header = TRUE, check.names = F, quote = "", comment.char = ""
 )
 
-hm <- compare_results(df_sc, df_sa, data_module = "Species")
+hm <- compare_results(df_sc, df_sa, data_module = "Species", sample_type = "Oral")
 pdf(file.path(output_dir, paste0("oral_species", "_heatmap.pdf")), 40, 35)
 draw(hm)
 dev.off()
@@ -152,7 +162,7 @@ df_sa <- read.table(file.path("Outputs/Differential_Abundance_Microbiome_SA/Oral
   sep = "\t", header = TRUE, check.names = F, quote = "", comment.char = ""
 )
 
-hm <- compare_results(df_sc, df_sa, data_module = "GO")
+hm <- compare_results(df_sc, df_sa, data_module = "GO", sample_type = "Oral")
 pdf(file.path(output_dir, paste0("oral_go", "_heatmap.pdf")), 70, 110)
 draw(hm)
 dev.off()
@@ -168,7 +178,7 @@ df_sa <- read.table(file.path("Outputs/Differential_Abundance_Metabolomics_SA/Gu
 )
 
 
-hm <- compare_results(df_sc, df_sa, data_module = "Metabolomics")
+hm <- compare_results(df_sc, df_sa, data_module = "Metabolomics", sample_type = "Gut")
 pdf(file.path(output_dir, paste0("gut_metabolomics", "_heatmap.pdf")), 40, 40)
 print(draw(hm))
 dev.off()
@@ -182,7 +192,7 @@ df_sa <- read.table(file.path("Outputs/Differential_Abundance_Metabolomics_SA/Pl
   sep = "\t", header = TRUE, check.names = F, quote = "", comment.char = ""
 )
 
-hm <- compare_results(df_sc, df_sa, data_module = "Metabolomics")
+hm <- compare_results(df_sc, df_sa, data_module = "Metabolomics", sample_type = "Plasma")
 pdf(file.path(output_dir, paste0("plasma_metabolomics", "_heatmap.pdf")), 40, 40)
 draw(hm)
 dev.off()
@@ -196,7 +206,7 @@ df_sa <- read.table(file.path("Outputs/Differential_Abundance_Metabolomics_SA/Or
   sep = "\t", header = TRUE, check.names = F, quote = "", comment.char = ""
 )
 
-hm <- compare_results(df_sc, df_sa, data_module = "Metabolomics")
+hm <- compare_results(df_sc, df_sa, data_module = "Metabolomics", sample_type = "Oral")
 pdf(file.path(output_dir, paste0("oral_metabolomics", "_heatmap.pdf")), 40, 40)
 draw(hm)
 dev.off()

@@ -2,7 +2,7 @@ rm(list= ls())
 source("code/load.R")
 dir.create("data/processed_data/oral", showWarnings = F, recursive = T)
 # Load data
-expvec <- read_rds("data/metagenomics/oral/SPHIVoral_Expvec_list_of_SummarizedExperiment_objects_c.rds")
+expvec <- read_rds("data/metagenomics/oral/SPHIVoral_Expvec_list_of_SummarizedExperiment_objects_c_removed_metadata.rds")
 # Taxonomies
 oral_taxonomies <- expvec$LKT@elementMetadata
 oral_taxonomies$Species <- gsub("Unclassified","sp.",oral_taxonomies$Species)

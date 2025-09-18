@@ -222,6 +222,10 @@ if (nrow(ancombc_sig) > 0) {
     arrange(trend,lfc,Feature) %>%
     mutate(Feature = factor(Feature,levels = unique(Feature)))
   
+  # Save source data
+  write.table(trend_sig[,c("Feature","study_condition","lfc","p_val","q_val","p_sig")] %>%
+                arrange(Feature,study_condition),
+              file.path(output_dir_sub, paste0(dt, "_source_data.txt")), sep = "\t", row.names = F, quote = F)
   
   trend_fig <- ggplot(trend_sig, aes(y = Feature, x = study_condition, fill = lfc)) +
     geom_tile(color = "black") +
@@ -244,3 +248,4 @@ if (nrow(ancombc_sig) > 0) {
   
   
 }
+

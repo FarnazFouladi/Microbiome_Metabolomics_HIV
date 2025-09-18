@@ -94,6 +94,10 @@ df_long <- df_m %>%
   pivot_longer(cols = -c("taxa")) %>%
   mutate(name = ifelse(name == "median_t_real", "Real data", "Null data"))
 
+# Save source data
+write.table(df_long %>% arrange(name) %>% dplyr::rename(median_disco = value), 
+            file.path("Outputs/Differential_Correlations_Validations","null_vs_real_source_data.txt"), sep = "\t", row.names = F, quote = F)
+
 p <- ggplot(df_long, aes(x = name, y = value, color = name)) +
   geom_boxplot(outlier.shape = NA) +
   geom_jitter(position = position_jitter(width = 0.1), alpha = 0.5) +
@@ -111,3 +115,4 @@ p <- ggplot(df_long, aes(x = name, y = value, color = name)) +
 pdf(file.path("Outputs/Differential_Correlations_Validations", "null_vs_real_boxplot.pdf"), 6.5, 5)
 print(p)
 dev.off()
+

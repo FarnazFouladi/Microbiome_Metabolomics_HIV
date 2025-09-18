@@ -244,6 +244,11 @@ for (feature in features_all) {
     mutate(Feature = factor(Feature,levels = unique(Feature)))
   
   
+  # Save source data
+  write.table(trend_sig[,c("Feature","study_condition","lfc","p_val","q_val","p_sig")] %>%
+                arrange(Feature,study_condition), 
+              file.path(dir_diff_sub, paste0(feature, "_source_data.txt")), sep = "\t", row.names = F, quote = F)
+  
   trend_fig <- ggplot(trend_sig, aes(y = Feature, x = study_condition, fill = lfc)) +
     geom_tile(color = "black") +
     geom_text(aes(label = lb), color = "black", size = 4) +

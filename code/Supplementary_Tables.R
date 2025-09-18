@@ -104,17 +104,17 @@ Plasma_MTB_NEG <- "Outputs/Correlations_trend_analysis/gut_plasma.meta.n_cor_dif
 Plasma_MTB_POS <- "Outputs/Correlations_trend_analysis/gut_plasma.meta.p_cor_diff_sig_with_trend_test.csv"
 
 
-df1 <- read.csv(Gut_Species, check.names = F) %>% select(-c("num_sig_corr_t1","num_sig_corr_t2")) %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
+df1 <- read.csv(Gut_Species, check.names = F) %>% dplyr::select(-c("num_sig_corr_t1","num_sig_corr_t2")) %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
   dplyr::rename(ρ1=r1, ρ2=r2,`ρG1`=`r1.g1`,`ρG2`=`r2.g2`,`ρG3`=`r3.g3`,`ρG4`=`r4.g4`) %>% arrange(`adj.p.trend`)
-df2 <- read.csv(Gut_GO, check.names = F)%>% select(-c("num_sig_corr_t1","num_sig_corr_t2")) %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
+df2 <- read.csv(Gut_GO, check.names = F)%>% dplyr::select(-c("num_sig_corr_t1","num_sig_corr_t2")) %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
   dplyr::rename(ρ1=r1, ρ2=r2,`ρG1`=`r1.g1`,`ρG2`=`r2.g2`,`ρG3`=`r3.g3`,`ρG4`=`r4.g4`) %>% arrange(`adj.p.trend`)
-df3 <- read.csv(Gut_MTB_NEG,check.names = F)%>% select(-c("num_sig_corr_t1","num_sig_corr_t2")) %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
+df3 <- read.csv(Gut_MTB_NEG,check.names = F)%>% dplyr::select(-c("num_sig_corr_t1","num_sig_corr_t2")) %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
   dplyr::rename(ρ1=r1, ρ2=r2,`ρG1`=`r1.g1`,`ρG2`=`r2.g2`,`ρG3`=`r3.g3`,`ρG4`=`r4.g4`) %>% arrange(`adj.p.trend`)
-df4 <- read.csv(Gut_MTB_POS, check.names = F)%>% select(-c("num_sig_corr_t1","num_sig_corr_t2")) %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
+df4 <- read.csv(Gut_MTB_POS, check.names = F)%>% dplyr::select(-c("num_sig_corr_t1","num_sig_corr_t2")) %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
   dplyr::rename(ρ1=r1, ρ2=r2,`ρG1`=`r1.g1`,`ρG2`=`r2.g2`,`ρG3`=`r3.g3`,`ρG4`=`r4.g4`) %>% arrange(`adj.p.trend`)
-df5 <- read.csv(Plasma_MTB_NEG, check.names = F)%>% select(-c("num_sig_corr_t1","num_sig_corr_t2")) %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
+df5 <- read.csv(Plasma_MTB_NEG, check.names = F)%>% dplyr::select(-c("num_sig_corr_t1","num_sig_corr_t2")) %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
   dplyr::rename(ρ1=r1, ρ2=r2,`ρG1`=`r1.g1`,`ρG2`=`r2.g2`,`ρG3`=`r3.g3`,`ρG4`=`r4.g4`) %>% arrange(`adj.p.trend`)
-df6 <- read.csv(Plasma_MTB_POS, check.names = F)%>% select(-c("num_sig_corr_t1","num_sig_corr_t2")) %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
+df6 <- read.csv(Plasma_MTB_POS, check.names = F)%>% dplyr::select(-c("num_sig_corr_t1","num_sig_corr_t2")) %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
   dplyr::rename(ρ1=r1, ρ2=r2,`ρG1`=`r1.g1`,`ρG2`=`r2.g2`,`ρG3`=`r3.g3`,`ρG4`=`r4.g4`) %>% arrange(`adj.p.trend`)
 
 make_supplementary_tables(name = "Supplementary_Table5",
@@ -195,17 +195,17 @@ Plasma_MTB_POS <- "Outputs/Correlations_trend_analysis/oral_plasma.meta.p_cor_di
 Gut_Species <- "Outputs/Correlations_trend_analysis/oral_gut_species_cor_diff_sig_with_trend_test.csv"
 
 #df1 <- read.csv(Oral_Species, check.names = F) %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% arrange(`adj.p.trend`)
-df2 <- read.csv(Oral_GO, check.names = F) %>% select(-c("num_sig_corr_t1","num_sig_corr_t2"))  %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
+df2 <- read.csv(Oral_GO, check.names = F) %>% dplyr::select(-c("num_sig_corr_t1","num_sig_corr_t2"))  %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
   dplyr::rename(ρ1=r1, ρ2=r2,`ρG1`=`r1.g1`,`ρG2`=`r2.g2`,`ρG3`=`r3.g3`,`ρG4`=`r4.g4`) %>% arrange(`adj.p.trend`)
-df3 <- read.csv(Oral_MTB_NEG, check.names = F) %>% select(-c("num_sig_corr_t1","num_sig_corr_t2"))  %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
+df3 <- read.csv(Oral_MTB_NEG, check.names = F) %>% dplyr::select(-c("num_sig_corr_t1","num_sig_corr_t2"))  %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
   dplyr::rename(ρ1=r1, ρ2=r2,`ρG1`=`r1.g1`,`ρG2`=`r2.g2`,`ρG3`=`r3.g3`,`ρG4`=`r4.g4`) %>% arrange(`adj.p.trend`)
-df4 <- read.csv(Oral_MTB_POS, check.names = F) %>% select(-c("num_sig_corr_t1","num_sig_corr_t2"))  %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
+df4 <- read.csv(Oral_MTB_POS, check.names = F) %>% dplyr::select(-c("num_sig_corr_t1","num_sig_corr_t2"))  %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
   dplyr::rename(ρ1=r1, ρ2=r2,`ρG1`=`r1.g1`,`ρG2`=`r2.g2`,`ρG3`=`r3.g3`,`ρG4`=`r4.g4`) %>% arrange(`adj.p.trend`)
-df5 <- read.csv(Plasma_MTB_NEG, check.names = F) %>% select(-c("num_sig_corr_t1","num_sig_corr_t2"))  %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
+df5 <- read.csv(Plasma_MTB_NEG, check.names = F) %>% dplyr::select(-c("num_sig_corr_t1","num_sig_corr_t2"))  %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
   dplyr::rename(ρ1=r1, ρ2=r2,`ρG1`=`r1.g1`,`ρG2`=`r2.g2`,`ρG3`=`r3.g3`,`ρG4`=`r4.g4`) %>% arrange(`adj.p.trend`)
-df6 <- read.csv(Plasma_MTB_POS, check.names = F) %>% select(-c("num_sig_corr_t1","num_sig_corr_t2"))  %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
+df6 <- read.csv(Plasma_MTB_POS, check.names = F) %>% dplyr::select(-c("num_sig_corr_t1","num_sig_corr_t2"))  %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
   dplyr::rename(ρ1=r1, ρ2=r2,`ρG1`=`r1.g1`,`ρG2`=`r2.g2`,`ρG3`=`r3.g3`,`ρG4`=`r4.g4`) %>% arrange(`adj.p.trend`)
-df7 <- read.csv(Gut_Species, check.names = F) %>% select(-c("num_sig_corr_t1","num_sig_corr_t2"))  %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
+df7 <- read.csv(Gut_Species, check.names = F) %>% dplyr::select(-c("num_sig_corr_t1","num_sig_corr_t2"))  %>% mutate(across(c(r1, r2,`r1.g1`,`r2.g2`,`r3.g3`,`r4.g4`), ~ round(.x, 2))) %>% 
   dplyr::rename(ρ1=r1, ρ2=r2,`ρG1`=`r1.g1`,`ρG2`=`r2.g2`,`ρG3`=`r3.g3`,`ρG4`=`r4.g4`) %>% arrange(`adj.p.trend`)
 
 make_supplementary_tables(name = "Supplementary_Table9",

@@ -16,6 +16,11 @@ adj.pval[lower.tri(adj.pval)] = t(adj.pval)[lower.tri(adj.pval)]
 delta_r[is.na(pval) | !(pval<0.01 & adj.pval < 0.1 & abs(delta_r)  > 0.3)] <- 0
 sig_diff <- read.csv(file.path(input_dir,"gut_species_cor_diff_sig.csv"),check.names = F) 
 sig_diff_f <- sig_diff %>% filter(grepl("Holdem",t1)|grepl("Holdem",t2) )
+# Save source data
+write.table(sig_diff_f %>% mutate(cor_diff = r2 - r1) %>%
+  select(c("t1","t2","cor_diff","p","BH_p")),
+  file = file.path(sub_dir,"Holdemanella_source_data.txt"),sep = "\t", row.names = F, quote = F)
+
 species <- unique(c(sig_diff_f$t1,sig_diff_f$t2))
 net.r <- delta_r[species,species]
 adj.pval <- adj.pval[species,species]
@@ -30,13 +35,10 @@ create_network(
   mat = net.r,pval_mat = adj.pval,
   datasets = c("Gut Species","Gut Species"),
   repulsion = 0.83, 
-  cexNodes = 4.4, 
-  cexHubs = 5, 
-  cexLabels = 6.5, 
-  cexHubLabels = 8, 
-  cexTitle = 3.8, 
-  legend_cex = 3, 
-  association_cex = 3, 
+  cexNodes = 2, 
+  cexHubs = 3, 
+  cexLabels = 0.5, 
+  cexHubLabels = 0.8, 
   outputdir = sub_dir, 
   prefix = "Holdemanella", 
 )
@@ -57,11 +59,16 @@ delta_r[q,q] <-0
 sig_diff <- read.csv(file.path(input_dir,"gut_go_cor_diff_sig.csv"),check.names = F) 
 features <- c("GO:0004641","GO:0004088")
 sig_diff_f <- sig_diff %>% filter(t2 %in% features) %>% arrange(t2)
+# Save source data
+write.table(sig_diff_f %>% mutate(cor_diff = r2 - r1) %>%
+              select(c("Description","t1","cor_diff","p","BH_p")),
+            file = file.path(sub_dir,"go_source_data.txt"),sep = "\t", row.names = F, quote = F)
+
 annotation_go <- sig_diff_f %>% select(c("t2","Description")) %>% distinct()
 net.r <- delta_r[unique(c(sig_diff_f$t2,sig_diff_f$t1)),unique(c(sig_diff_f$t2,sig_diff_f$t1))]
 adj.pval <- adj.pval[rownames(net.r),colnames(net.r)]
-colnames(net.r)[1:length(features)] <- annotation_go$Description
-rownames(net.r)[1:length(features)] <- annotation_go$Description
+#colnames(net.r)[1:length(features)] <- annotation_go$Description
+#rownames(net.r)[1:length(features)] <- annotation_go$Description
 colnames(net.r) <- gsub("s__","taxa ",colnames(net.r))
 rownames(net.r) <- gsub("s__","taxa ",rownames(net.r))
 colnames(net.r) <- gsub("_"," ",colnames(net.r))
@@ -72,13 +79,10 @@ create_network(
   mat = as.matrix(net.r),pval_mat = adj.pval,
   datasets = c("Gut Species","Gut GO"),
   repulsion = 0.85, 
-  cexNodes = 4, 
-  cexHubs = 9, 
-  cexLabels = 4.5, 
-  cexHubLabels = 10, 
-  cexTitle = 3.8, 
-  legend_cex = 3, 
-  association_cex = 3, 
+  cexNodes = 2, 
+  cexHubs = 3, 
+  cexLabels = 0.5, 
+  cexHubLabels = 0.8, 
   outputdir = sub_dir, 
   prefix = "go", 
 )
@@ -98,6 +102,11 @@ delta_r[q,q] <-0
 sig_diff <- read.csv(file.path(input_dir,"gut_meta.p_cor_diff_sig.csv"),check.names = F) 
 sig_diff_f <- sig_diff %>% filter(sub_class =="Pyrimidines and pyrimidine derivatives" | sub_class == 
                                     "Purines and purine derivatives")
+# Save source data
+write.table(sig_diff_f %>% mutate(cor_diff = r2 - r1) %>%
+              select(c("Metabolites","t1","cor_diff","p","BH_p")),
+            file = file.path(sub_dir,"gut_mtb.p_source_data.txt"),sep = "\t", row.names = F, quote = F)
+
 annotation <- sig_diff_f %>% select(c("t2","Metabolites")) %>% distinct()
 features <- unique(c(sig_diff_f$t2))
 net.r <- delta_r[unique(c(sig_diff_f$t2,sig_diff_f$t1)),unique(c(sig_diff_f$t2,sig_diff_f$t1))]
@@ -114,13 +123,10 @@ create_network(
   mat = net.r,pval_mat = adj.pval,
   datasets = c("Gut Species","Gut MTB-P"),
   repulsion = 0.85, 
-  cexNodes = 3, 
-  cexHubs = 4, 
-  cexLabels = 5, 
-  cexHubLabels = 5, 
-  cexTitle = 3.8, 
-  legend_cex = 3, 
-  association_cex = 3, 
+  cexNodes = 2, 
+  cexHubs = 3, 
+  cexLabels = 0.5, 
+  cexHubLabels = 0.8, 
   outputdir = sub_dir, 
   prefix = "gut_mtb.p", 
 )
@@ -140,7 +146,6 @@ delta_r[q,q] <-0
 
 sig_diff <- read.csv(file.path(input_dir,"gut_meta.p_cor_diff_sig.csv"),check.names = F) 
 sig_diff_f <- sig_diff %>% filter(Metabolites %in% c("Histamine","Sphingosine(1+)"))
-
 annotation <- sig_diff_f %>% select(c("t2","Metabolites")) %>% distinct()
 features <- unique(c(sig_diff_f$t2))
 net.r <- delta_r[unique(c(sig_diff_f$t2,sig_diff_f$t1)),unique(c(sig_diff_f$t2,sig_diff_f$t1))]
@@ -159,13 +164,10 @@ create_network(
   mat = net.r,pval_mat = adj.pval,
   datasets = c("Gut Species","Gut MTB-P"),
   repulsion = 0.85, 
-  cexNodes = 4, 
-  cexHubs = 4, 
-  cexLabels = 5, 
-  cexHubLabels = 5, 
-  cexTitle = 3.8, 
-  legend_cex = 3, 
-  association_cex = 3, 
+  cexNodes = 2, 
+  cexHubs = 3, 
+  cexLabels = 0.5, 
+  cexHubLabels = 0.8, 
   outputdir = sub_dir, 
   prefix = "gut_mtb.p_histamine", 
 )
@@ -185,6 +187,11 @@ delta_r[q,q] <-0
 
 sig_diff <- read.csv(file.path(input_dir,"gut_plasma.meta.n_cor_diff_sig.csv"),check.names = F) 
 sig_diff_f <- sig_diff %>% filter(grepl("Bile|bile",sub_class )) %>% arrange(t2)
+# Save source data
+write.table(sig_diff_f %>% mutate(cor_diff = r2 - r1) %>%
+              select(c("Metabolites","t1","cor_diff","p","BH_p")),
+            file = file.path(sub_dir,"plasma_mtb.n_source_data.txt"),sep = "\t", row.names = F, quote = F)
+
 features <- unique(sig_diff_f$Metabolites)
 annotation <- sig_diff_f %>% select(c("t2","Metabolites")) %>% distinct()
 net.r <- delta_r[unique(c(sig_diff_f$t2,sig_diff_f$t1)),unique(c(sig_diff_f$t2,sig_diff_f$t1))]
@@ -202,13 +209,10 @@ create_network(
   mat = net.r,pval_mat = adj.pval,
   datasets = c("Gut Species","Plasma MTB-N"),
   repulsion = 0.75, 
-  cexNodes = 4, 
-  cexHubs = 5, 
-  cexLabels = 5, 
-  cexHubLabels = 6, 
-  cexTitle = 3.8, 
-  legend_cex = 3, 
-  association_cex = 3, 
+  cexNodes = 2, 
+  cexHubs = 3, 
+  cexLabels = 0.5, 
+  cexHubLabels = 0.8, 
   outputdir = sub_dir, 
   prefix = "plasma_mtb.n", 
 )

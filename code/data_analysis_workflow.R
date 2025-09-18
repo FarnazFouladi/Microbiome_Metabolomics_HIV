@@ -48,23 +48,25 @@ source("code/differential_abundance_comparisons.R")
 ##############################################
 #DIABLO
 ##############################################
+# This takes a while to run (~17 hours)
 source("code/diablo_gut.R")
 
 
 ##############################################
-#Differential Correlations and DYSCO
+#Differential Correlations and DISCO
 ##############################################
+# Bias correction and normalization
 source("code/process_data.R")
-# Differential correlation
+# Differential correlation analysis
 source("code/differential_correlation.R")
-# DYSCO
+# DISCO
 system("Rscript code/dysco_heatmap.R") 
 # Subnetworks
 system("Rscript code/subset_networks_gut.R")
 system("Rscript code/subset_networks_oral.R")
 
 ##############################################
-#Correlations trend analysis
+#Trend analysis of correlations among four sexual activity groups
 ##############################################
 system("Rscript code/correlation_trend_analysis.R")
 system("Rscript code/correlation_trend_heatmap.R")
@@ -85,7 +87,7 @@ source("code/external_data_Armstrong_2018.R")
 source("code/dysco_heatmap_across_studies.R")
 
 ##############################################
-#DYSCO validation
+#DISCO validation
 ##############################################
 
 source("code/differential_correlations_validation.R")

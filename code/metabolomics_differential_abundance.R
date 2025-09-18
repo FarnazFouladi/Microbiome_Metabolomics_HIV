@@ -146,6 +146,11 @@ if (nrow(ancombc_sig) > 0) {
   } else {
     cols_sub <- status_cols
   }
+  
+  # Save source data
+  write.table(ancombc_sig[,c("Feature","lfc_statussc","se_statussc","p_statussc","q_statussc","change","p_sig")] %>%
+                rename_with(~ gsub("_statussc", "", .x)), 
+              file.path(output_dir_sub, paste0(dt, "_source_data.txt")), sep = "\t", row.names = F, quote = F)
 
   # Waterfall plot
   p1 <- ggplot(ancombc_sig, aes(y = .data[["Feature"]], x = .data[["lfc_statussc"]], fill = .data[["change"]])) +
@@ -197,3 +202,4 @@ if (nrow(ancombc_sig) > 0) {
 
   dev.off()
 }
+

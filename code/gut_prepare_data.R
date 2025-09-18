@@ -2,7 +2,7 @@ rm(list = ls())
 source("code/load.R")
 dir.create("data/processed_data/gut", showWarnings = F, recursive = T)
 # Load data
-expvec <- read_rds("data/metagenomics/gut/SP_HIV_expvec_c.rds")
+expvec <- read_rds("data/metagenomics/gut/SP_HIV_expvec_c_removed_metadata.rds")
 # Taxonomies
 gut_taxonomies <- expvec$LKT@elementMetadata
 gut_taxonomies$Species <- gsub("Unclassified","sp.",gut_taxonomies$Species)

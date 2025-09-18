@@ -64,6 +64,10 @@ create_heatmap <- function(list_res, p_alpha = 0.01, bh_alpha = 0.1, top_n, min_
   library(circlize)
   library(ComplexHeatmap)
   col_fun <- colorRamp2(c(min(df_p_sig_log), max(df_p_sig_log)), c("white", "red"))
+  # Save source data
+  write.table(df_p_sig_log, 
+              file.path(output_dir, paste0(sample_type, "_source_data.txt")), sep = "\t", row.names = T, quote = F)
+  
   hm <- Heatmap(as.matrix(df_p_sig_log),
     row_names_gp = gpar(fontsize = 40, fontface = "italic"),
     column_names_gp = gpar(fontsize = 40),
@@ -90,17 +94,17 @@ create_heatmap <- function(list_res, p_alpha = 0.01, bh_alpha = 0.1, top_n, min_
     cluster_columns = FALSE, cluster_rows = TRUE, col = col_fun,
     heatmap_legend_param = list(
       legend_height = unit(5, "cm"),
-      legend_width = unit(5, "cm"),
-      title_gp = gpar(fontsize = 30, fontface = "bold"),
-      labels_gp = gpar(fontsize = 30),
-      direction = "horizontal",
+      legend_width = unit(10, "cm"),
+      title_gp = gpar(fontsize = 40, fontface = "bold"),
+      labels_gp = gpar(fontsize = 40),
+      direction = "vertical",
       title = "-log10 p-value"
     )
   )
 
 
-  h <- draw(hm, heatmap_legend_side = "right")
-  pdf(file.path(output_dir, paste0(sample_type, "_dysco_heatmap_top.pdf")), 30, 50)
-  print(h)
+ 
+  pdf(file.path(output_dir, paste0(sample_type, "_dysco_heatmap_top.pdf")), 33, 50)
+  draw(hm, heatmap_legend_side = "left")
   dev.off()
 }

@@ -302,4 +302,4 @@ df2 <- df1 %>%
   mutate(name = gsub("_Gut|_MTB_Plasma|_MTB_Gut", "", name)) %>%
   rename(feature1 = Feature, feature2 = name, data_mdality1 = d1, data_mdality2 = d2 )
 
-xlsx::write.xlsx(df2, file = file.path( "Supplementary_Tables", "Supplementary_Table2.xlsx"))
+xlsx::write.xlsx(df2, file = file.path( "Supplementary_Tables", "Supplementary_Table3.xlsx"))

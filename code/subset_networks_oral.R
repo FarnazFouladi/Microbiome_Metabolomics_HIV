@@ -22,6 +22,10 @@ delta_r[q,q] <-0
 
 sig_diff <- read.csv(file.path(input_dir,"oral_go_cor_diff_sig.csv"),check.names = F) 
 sig_diff_f <- sig_diff %>% filter(grepl("Haemophilus_parainfluenzae",t1)) %>% arrange(t2)
+# Save source data
+write.table(sig_diff_f %>% mutate(cor_diff = r2 - r1) %>%
+              select(c("Description","t1","cor_diff","p","BH_p")),
+            file = file.path(sub_dir,"oral_go_source_data.txt"),sep = "\t", row.names = F, quote = F)
 annotation_go <- sig_diff_f %>% select(c("t2","Description")) %>% distinct()
 features <- annotation_go$t2
 net.r <- delta_r[unique(c(sig_diff_f$t2,sig_diff_f$t1)),unique(c(sig_diff_f$t2,sig_diff_f$t1))]
@@ -38,13 +42,10 @@ create_network(
   mat = net.r,,pval_mat = adj.pval,
   datasets = c("Oral Species","Oral GO"),
   repulsion = 0.85, 
-  cexNodes = 1, 
-  cexHubs = 15, 
-  cexLabels = 1, 
-  cexHubLabels = 15, 
-  cexTitle = 3.8, 
-  legend_cex = 3, 
-  association_cex = 3, 
+  cexNodes = 2, 
+  cexHubs = 3, 
+  cexLabels = 0.2, 
+  cexHubLabels = 0.8, 
   outputdir = sub_dir, 
   prefix = "oral_go", 
 )
@@ -65,6 +66,11 @@ delta_r[q,q] <-0
 sig_diff <- read.csv(file.path(input_dir,"oral_meta.n_cor_diff_sig.csv"),check.names = F) 
 features <- c("LysoPC(16:0/0:0)") 
 sig_diff_f <- sig_diff %>% filter(Metabolites %in% features) %>% arrange(t2)
+# Save source data
+write.table(sig_diff_f %>% mutate(cor_diff = r2 - r1) %>%
+              select(c("Metabolites","t1","cor_diff","p","BH_p")),
+            file = file.path(sub_dir,"oral_mtb.n_source_data.txt"),sep = "\t", row.names = F, quote = F)
+
 annotation <- sig_diff_f %>% select(c("t2","Metabolites")) %>% distinct()
 net.r <- delta_r[unique(c(sig_diff_f$t2,sig_diff_f$t1)),unique(c(sig_diff_f$t2,sig_diff_f$t1))]
 adj.pval <- adj.pval[rownames(net.r),colnames(net.r)]
@@ -81,13 +87,10 @@ create_network(
   mat = net.r,,pval_mat = adj.pval,
   datasets = c("Oral Species","Oral MTB-N"),
   repulsion = 0.85, 
-  cexNodes = 4, 
-  cexHubs = 5, 
-  cexLabels = 6, 
-  cexHubLabels = 7, 
-  cexTitle = 3.8, 
-  legend_cex = 3, 
-  association_cex = 3, 
+  cexNodes = 2, 
+  cexHubs = 3, 
+  cexLabels = 0.5, 
+  cexHubLabels = 0.8, 
   outputdir = sub_dir, 
   prefix = "oral_mtb.n", 
 )
@@ -108,6 +111,11 @@ delta_r[q,q] <-0
 features <- c("HMDB0062551")
 sig_diff <- read.csv(file.path(input_dir,"oral_plasma.meta.n_cor_diff_sig.csv"),check.names = F) 
 sig_diff_f <- sig_diff %>% filter(t2 %in% features) %>% arrange(t2)
+# Save source data
+write.table(sig_diff_f %>% mutate(cor_diff = r2 - r1) %>%
+              select(c("Metabolites","t1","cor_diff","p","BH_p")),
+            file = file.path(sub_dir,"oral_plasma_mtb.n_source_data.txt"),sep = "\t", row.names = F, quote = F)
+
 annotation <- sig_diff_f %>% select(c("t2","Metabolites")) %>% distinct()
 net.r <- delta_r[unique(c(sig_diff_f$t2,sig_diff_f$t1)),unique(c(sig_diff_f$t2,sig_diff_f$t1))]
 adj.pval <- adj.pval[rownames(net.r),colnames(net.r)]
@@ -124,13 +132,10 @@ create_network(
   mat = net.r,,pval_mat = adj.pval,
   datasets = c("Oral Species","Plasma MTB-N"),
   repulsion = 0.9, 
-  cexNodes = 4, 
-  cexHubs = 5, 
-  cexLabels = 7, 
-  cexHubLabels = 8, 
-  cexTitle = 3.8, 
-  legend_cex = 3, 
-  association_cex = 3, 
+  cexNodes = 2, 
+  cexHubs = 3, 
+  cexLabels = 0.5, 
+  cexHubLabels = 0.8, 
   outputdir = sub_dir, 
   prefix = "oral_plasma_mtb.n", 
 )
@@ -150,6 +155,10 @@ delta_r[q,q] <-0
 sig_diff <- read.csv(file.path(input_dir,"oral_gut_species_cor_diff_sig.csv"),check.names = F) 
 sig_diff_f <- sig_diff %>% filter(grepl("gut_s__Roseburia|^gut_s__Eubacterium|^gut_s__Bifidobacterium",t2) |
                                     grepl("s__Streptococcus|^s__Porphyromonas|^s__Prevotella",t1) )
+# Save source data
+write.table(sig_diff_f %>% mutate(cor_diff = r2 - r1) %>%
+              select(c("t1","t2","cor_diff","p","BH_p")),
+            file = file.path(sub_dir,"oral_gut_species_source_data.txt"),sep = "\t", row.names = F, quote = F)
 
 net.r <- delta_r[unique(c(sig_diff_f$t2,sig_diff_f$t1)),unique(c(sig_diff_f$t2,sig_diff_f$t1))]
 adj.pval <- adj.pval[rownames(net.r),colnames(net.r)]
@@ -163,14 +172,11 @@ adj.pval[is.na(adj.pval)] <- 1
 create_network(
   mat = net.r,pval_mat = adj.pval,
   datasets = c("Oral Species","Gut Species"),
-  repulsion = 0.88, 
-  cexNodes = 2.5, 
-  cexHubs = 3.5, 
-  cexLabels = 7, 
-  cexHubLabels = 8, 
-  cexTitle = 3.8, 
-  legend_cex = 3, 
-  association_cex = 3, 
+  repulsion = 1, 
+  cexNodes = 2, 
+  cexHubs = 3, 
+  cexLabels = 0.4, 
+  cexHubLabels = 0.7, 
   outputdir = sub_dir, 
   prefix = "oral_gut_species", 
 )

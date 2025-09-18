@@ -140,6 +140,11 @@ for (feature in features_all) {
     } else {
       cols_sub <- status_cols
     }
+    
+    # Save source data
+    write.table(ancombc_sig[,c(variable,"lfc_statussc","se_statussc","p_statussc","q_statussc","change","p_sig")] %>%
+                  rename_with(~ gsub("_statussc", "", .x)), 
+                file.path(dir_diff_sub, paste0(feature, "_source_data.txt")), sep = "\t", row.names = F, quote = F)
 
     # Waterfall plot
     pdf(file.path(dir_diff_sub, paste0(feature, "_wf_fig.pdf")), 10, ifelse(nrow(ancombc_sig) > 4, 8, 4))

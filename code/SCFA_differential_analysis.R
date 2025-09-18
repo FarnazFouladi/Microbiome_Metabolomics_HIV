@@ -96,6 +96,12 @@ plots <- lapply(unique(scf_sub$env), function(x) {
 
   stopifnot(all.equal(as.character(stat$scfa), df_p_sig1$SCFA))
   stat$p <- round(df_p_sig1$p, 3)
+  
+  # Save source data
+  write.table(scf_sub1[,c("scfa","value","status")] %>%
+                mutate(status = dplyr::recode(status, nc="Non-HIV", sc= "Pre-HIV")) %>%
+                arrange(scfa), 
+              file.path(outdir, paste0(x, "_source_data.txt")), sep = "\t", row.names = F, quote = F)
 
   p <- ggplot(scf_sub1, aes(x = scfa, y = value, color = status)) +
     geom_boxplot(outlier.shape = NA) +

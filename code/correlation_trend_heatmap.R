@@ -14,9 +14,11 @@ sig_diff_ordered$t1[grepl("Holdem",sig_diff_f$t2)] <- sig_diff_f$t2[grepl("Holde
 sig_diff_ordered$t2[grepl("Holdem",sig_diff_f$t2)] <- sig_diff_f$t1[grepl("Holdem",sig_diff_f$t2)]
 
 sig_diff_ordered <- sig_diff_ordered %>% arrange(`adj.p.trend`) %>% mutate(pairs = paste0(t1,":",t2)) %>%
-  select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
-mat1 <- sig_diff_ordered %>% select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
-annot <- sig_diff_ordered %>% select("adj.p.trend" ) 
+  dplyr::select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
+write.table(sig_diff_ordered, 
+            file.path(sub_dir, paste0("Holdemanella", "_trend_source_data.txt")), sep = "\t", row.names = T, quote = F)
+mat1 <- sig_diff_ordered %>% dplyr::select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
+annot <- sig_diff_ordered %>% dplyr::select("adj.p.trend" ) 
 trend_heatmap(mat1,annot,sub_dir,"Holdemanella")
 
 ############################################# Gut GO
@@ -26,9 +28,11 @@ sig_diff_f <- trend_res %>% filter(t2 %in% features)
 sig_diff_ordered <- sig_diff_f
 
 sig_diff_ordered <- sig_diff_ordered %>% arrange(`adj.p.trend`) %>% mutate(pairs = paste0(Description,":",t1)) %>%
-  select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
-mat1 <- sig_diff_ordered %>% select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
-annot <- sig_diff_ordered %>% select("adj.p.trend" )
+  dplyr::select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
+write.table(sig_diff_ordered, 
+            file.path(sub_dir, paste0("go", "_trend_source_data.txt")), sep = "\t", row.names = T, quote = F)
+mat1 <- sig_diff_ordered %>% dplyr::select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
+annot <- sig_diff_ordered %>% dplyr::select("adj.p.trend" )
 
 trend_heatmap(mat1,annot,sub_dir,"go")
 
@@ -38,9 +42,11 @@ sig_diff_f <- trend_res %>% filter(sub_class =="Pyrimidines and pyrimidine deriv
                                     "Purines and purine derivatives")
 sig_diff_ordered <- sig_diff_f
 sig_diff_ordered <- sig_diff_ordered %>% arrange(`adj.p.trend`) %>% mutate(pairs = paste0(Metabolites,":",t1)) %>%
-  select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
-mat1 <- sig_diff_ordered %>% select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
-annot <- sig_diff_ordered %>% select("adj.p.trend" )
+  dplyr::select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
+write.table(sig_diff_ordered, 
+            file.path(sub_dir, paste0("gut_mtb.p", "_trend_source_data.txt")), sep = "\t", row.names = T, quote = F)
+mat1 <- sig_diff_ordered %>% dplyr::select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
+annot <- sig_diff_ordered %>% dplyr::select("adj.p.trend" )
 
 trend_heatmap(mat1,annot,sub_dir,"gut_mtb.p")
 
@@ -49,9 +55,11 @@ trend_res <- read.csv(file.path("Outputs/Correlations_trend_analysis",paste0("gu
 sig_diff_f <- trend_res %>% filter(Metabolites %in% c("Histamine","Sphingosine(1+)"))
 sig_diff_ordered <- sig_diff_f
 sig_diff_ordered <- sig_diff_ordered %>% arrange(`adj.p.trend`) %>% mutate(pairs = paste0(Metabolites,":",t1)) %>%
-  select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
-mat1 <- sig_diff_ordered %>% select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
-annot <- sig_diff_ordered %>% select("adj.p.trend" )
+  dplyr::select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
+write.table(sig_diff_ordered, 
+            file.path(sub_dir, paste0("gut_mtb.p_histamine", "_trend_source_data.txt")), sep = "\t", row.names = T, quote = F)
+mat1 <- sig_diff_ordered %>% dplyr::select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
+annot <- sig_diff_ordered %>% dplyr::select("adj.p.trend" )
 
 trend_heatmap(mat1,annot,sub_dir,"gut_mtb.p_histamine")
 
@@ -60,9 +68,11 @@ trend_res <- read.csv(file.path("Outputs/Correlations_trend_analysis",paste0("gu
 sig_diff_f <- trend_res %>% filter(grepl("Bile|bile",sub_class )) 
 sig_diff_ordered <- sig_diff_f
 sig_diff_ordered <- sig_diff_ordered %>% arrange(`adj.p.trend`) %>% mutate(pairs = paste0(Metabolites,":",t1)) %>%
-  select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
-mat1 <- sig_diff_ordered %>% select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
-annot <- sig_diff_ordered %>% select("adj.p.trend" )
+  dplyr::select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
+write.table(sig_diff_ordered, 
+            file.path(sub_dir, paste0("gut_plasma.meta.n", "_trend_source_data.txt")), sep = "\t", row.names = T, quote = F)
+mat1 <- sig_diff_ordered %>% dplyr::select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
+annot <- sig_diff_ordered %>% dplyr::select("adj.p.trend" )
 
 trend_heatmap(mat1,annot,sub_dir,"gut_plasma.meta.n")
 
@@ -74,9 +84,11 @@ sig_diff_f <- trend_res %>% filter(grepl("Haemophilus_parainfluenzae",t1))
 sig_diff_ordered <- sig_diff_f
 
 sig_diff_ordered <- sig_diff_ordered %>% arrange(`adj.p.trend`) %>% mutate(pairs = paste0(t1,":",Description)) %>%
-  select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
-mat1 <- sig_diff_ordered %>% select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
-annot <- sig_diff_ordered %>% select("adj.p.trend" )
+  dplyr::select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
+write.table(sig_diff_ordered, 
+            file.path(sub_dir, paste0("oral_go", "_trend_source_data.txt")), sep = "\t", row.names = T, quote = F)
+mat1 <- sig_diff_ordered %>% dplyr::select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
+annot <- sig_diff_ordered %>% dplyr::select("adj.p.trend" )
 
 trend_heatmap(mat1,annot,sub_dir,"oral_go")
 
@@ -87,9 +99,11 @@ sig_diff_f <- trend_res %>% filter(Metabolites %in% features)
 sig_diff_ordered <- sig_diff_f
 
 sig_diff_ordered <- sig_diff_ordered %>% arrange(`adj.p.trend`) %>% mutate(pairs = paste0(Metabolites,":",t1)) %>%
-  select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
-mat1 <- sig_diff_ordered %>% select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
-annot <- sig_diff_ordered %>% select("adj.p.trend" )
+  dplyr::select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
+write.table(sig_diff_ordered, 
+            file.path(sub_dir, paste0("oral_meta.n", "_trend_source_data.txt")), sep = "\t", row.names = T, quote = F)
+mat1 <- sig_diff_ordered %>% dplyr::select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
+annot <- sig_diff_ordered %>% dplyr::select("adj.p.trend" )
 
 trend_heatmap(mat1,annot,sub_dir,"oral_meta.n")
 
@@ -100,9 +114,11 @@ sig_diff_f <- trend_res %>% filter(t2 %in% features)
 sig_diff_ordered <- sig_diff_f
 
 sig_diff_ordered <- sig_diff_ordered %>% arrange(`adj.p.trend`) %>% mutate(pairs = paste0(Metabolites,":",t1)) %>%
-  select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
-mat1 <- sig_diff_ordered %>% select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
-annot <- sig_diff_ordered %>% select("adj.p.trend" )
+  dplyr::select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
+write.table(sig_diff_ordered, 
+            file.path(sub_dir, paste0("oral_plasma.meta.n", "_trend_source_data.txt")), sep = "\t", row.names = T, quote = F)
+mat1 <- sig_diff_ordered %>% dplyr::select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
+annot <- sig_diff_ordered %>% dplyr::select("adj.p.trend" )
 
 trend_heatmap(mat1,annot,sub_dir,"oral_plasma.meta.n")
 
@@ -112,9 +128,11 @@ sig_diff_f <- trend_res %>% filter(grepl("gut_s__Roseburia|^gut_s__Eubacterium_|
 sig_diff_ordered <- sig_diff_f
 
 sig_diff_ordered <- sig_diff_ordered %>% arrange(`adj.p.trend`) %>% mutate(pairs = paste0(t1,":",t2)) %>%
-  select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
-mat1 <- sig_diff_ordered %>% select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
-annot <- sig_diff_ordered %>% select("adj.p.trend" )
+  dplyr::select(c("pairs","r1.g1" ,"r2.g2","r3.g3","r4.g4", "adj.p.trend"   )) %>% column_to_rownames("pairs")
+write.table(sig_diff_ordered, 
+            file.path(sub_dir, paste0("oral_gut_species", "_trend_source_data.txt")), sep = "\t", row.names = T, quote = F)
+mat1 <- sig_diff_ordered %>% dplyr::select(c("r1.g1" ,"r2.g2","r3.g3","r4.g4"))
+annot <- sig_diff_ordered %>% dplyr::select("adj.p.trend" )
 
 trend_heatmap(mat1,annot,sub_dir,"oral_gut_species")
 
