@@ -11,7 +11,7 @@ paper:
 
 **Fouladi et al. A taxon-specific measurement of disruption in a
 multi-modal study of microbiomes and metabolomes reveals system-wide
-dysbiosis preceding HIV-1 infection. 2025. Nature Communications**
+dysbiosis preceding HIV-1 infection. 2025. Nature Communications.**
 
 Please refer to *data availability* in the paper to obtain the metadata
 for this project
