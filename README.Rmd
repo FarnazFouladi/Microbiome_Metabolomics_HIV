@@ -1,0 +1,30 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Microbiome_Metabolomics_HIV
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+This repository includes data, R codes and outputs for the manuscript **A taxon-specific measurement of disruption in a multi-modal study of microbiomes and metabolomes reveals system-wide dysbiosis preceding HIV-1 infection**. 
+
+Please follow the the main script  *code/data_analysis_workflow.R* to run all the analyses.
+
+
+Please refer to the *data availability* in the paper to obtain the metadata for this project
+
+
+```{r cars}
+sessionInfo()
+```
+
