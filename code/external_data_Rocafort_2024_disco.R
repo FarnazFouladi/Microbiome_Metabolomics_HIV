@@ -105,7 +105,7 @@ for (cohort in cohorts) {
     df.g1 <- df.g1[, common_features]
     df.g2 <- df.g2[, common_features]
 
-    species_res <- dysco_score(
+    species_res <- disco_score(
       data1 = list(df.g1), data2 = list(df.g2),
       output_dir = subdir,prefix = paste0(name,"_gut_species")
     )
@@ -114,10 +114,10 @@ for (cohort in cohorts) {
 }
 
 # Heatmap
-boston_msm <- read.csv(file.path("Outputs/External_Dataset/Rocafort_2024/boston/MSM", paste0("Rocafort_boston_MSM", "_gut_species_dysco.csv")),check.names = F )
-boston_hetr <- read.csv(file.path("Outputs/External_Dataset/Rocafort_2024/boston/heterosexual", paste0("Rocafort_boston_heterosexual", "_gut_species_dysco.csv")),check.names = F )
-bostwana_hetr <- read.csv(file.path("Outputs/External_Dataset/Rocafort_2024/botswana/heterosexual", paste0("Rocafort_botswana_heterosexual", "_gut_species_dysco.csv")),check.names = F )
-uganda_hetr <- read.csv(file.path("Outputs/External_Dataset/Rocafort_2024/uganda_2/heterosexual", paste0("Rocafort_uganda_2_heterosexual", "_gut_species_dysco.csv")),check.names = F )
+boston_msm <- read.csv(file.path("Outputs/External_Dataset/Rocafort_2024/boston/MSM", paste0("Rocafort_boston_MSM", "_gut_species_disco.csv")),check.names = F )
+boston_hetr <- read.csv(file.path("Outputs/External_Dataset/Rocafort_2024/boston/heterosexual", paste0("Rocafort_boston_heterosexual", "_gut_species_disco.csv")),check.names = F )
+bostwana_hetr <- read.csv(file.path("Outputs/External_Dataset/Rocafort_2024/botswana/heterosexual", paste0("Rocafort_botswana_heterosexual", "_gut_species_disco.csv")),check.names = F )
+uganda_hetr <- read.csv(file.path("Outputs/External_Dataset/Rocafort_2024/uganda_2/heterosexual", paste0("Rocafort_uganda_2_heterosexual", "_gut_species_disco.csv")),check.names = F )
 
 res_list <- list(boston_msm,boston_hetr,bostwana_hetr,uganda_hetr)
 names(res_list)<-c("Boston MSM","Boston Heterosexual","Botswana","Uganda")

@@ -216,7 +216,7 @@ make_supplementary_tables(name = "Supplementary_Table9",
 datasets <- c("gut_species","gut_go","gut_meta.n","gut_meta.p","gut_plasma.meta.n","gut_plasma.meta.p",
               "oral_species","oral_go","oral_meta.n","oral_meta.p","oral_plasma.meta.n","oral_plasma.meta.p","oral_gut_species")
 list_res <- lapply(datasets, function(d){
-  read.csv(file.path(file.path("Outputs", "Differential_Correlations","Tables"), paste0(d,"_dysco.csv"))) %>% 
+  read.csv(file.path(file.path("Outputs", "Differential_Correlations","Tables"), paste0(d,"_disco.csv"))) %>% 
     arrange(desc(t)) %>% dplyr::rename(`number of correlations` = num_corr)
 })
 datasets <- c("Gut Species","Gut GO","Gut MTB-NEG","Gut MTB-POS","Plasma MTB-NEG","Plasma MTB-POS",
@@ -230,29 +230,29 @@ make_supplementary_tables(name = "Supplementary_Table10",
 
 
 # Supplemental table 11
-Fulcher_neg_species <- read.csv("Outputs/External_Dataset/Fulcher_2022/Negative/Fulcher_2022_Negative_gut_species_dysco.csv", check.names = F) %>% 
+Fulcher_neg_species <- read.csv("Outputs/External_Dataset/Fulcher_2022/Negative/Fulcher_2022_Negative_gut_species_disco.csv", check.names = F) %>% 
   arrange(desc(t)) %>% dplyr::rename(`number of correlations` = num_corr,taxa = species)
-Fulcher_neg_go <- read.csv("Outputs/External_Dataset/Fulcher_2022/Negative/Fulcher_2022_Negative_gut_go_dysco.csv", check.names = F) %>% 
+Fulcher_neg_go <- read.csv("Outputs/External_Dataset/Fulcher_2022/Negative/Fulcher_2022_Negative_gut_go_disco.csv", check.names = F) %>% 
   arrange(desc(t)) %>% dplyr::rename(`number of correlations` = num_corr,taxa = species)
-Fulcher_pos_species <- read.csv("Outputs/External_Dataset/Fulcher_2022/Positive/Fulcher_2022_Positive_gut_species_dysco.csv", check.names = F) %>% 
+Fulcher_pos_species <- read.csv("Outputs/External_Dataset/Fulcher_2022/Positive/Fulcher_2022_Positive_gut_species_disco.csv", check.names = F) %>% 
   arrange(desc(t)) %>% dplyr::rename(`number of correlations` = num_corr,taxa = species)
-Fulcher_pos_go <- read.csv("Outputs/External_Dataset/Fulcher_2022/Positive/Fulcher_2022_Positive_gut_go_dysco.csv", check.names = F) %>% 
+Fulcher_pos_go <- read.csv("Outputs/External_Dataset/Fulcher_2022/Positive/Fulcher_2022_Positive_gut_go_disco.csv", check.names = F) %>% 
   arrange(desc(t)) %>% dplyr::rename(`number of correlations` = num_corr,taxa = species)
-Garcia_species <- read.csv("Outputs/External_Dataset/Garcia_2024/Garcia_2024_gut_species_dysco.csv", check.names = F) %>% 
+Garcia_species <- read.csv("Outputs/External_Dataset/Garcia_2024/Garcia_2024_gut_species_disco.csv", check.names = F) %>% 
   arrange(desc(t)) %>% dplyr::rename(`number of correlations` = num_corr,taxa = species)
-Garcia_go <- read.csv("Outputs/External_Dataset/Garcia_2024/Garcia_2024_gut_go_dysco.csv", check.names = F) %>% 
+Garcia_go <- read.csv("Outputs/External_Dataset/Garcia_2024/Garcia_2024_gut_go_disco.csv", check.names = F) %>% 
   arrange(desc(t)) %>% dplyr::rename(`number of correlations` = num_corr,taxa = species)
-boston_msm <- read.csv(file.path("Outputs/External_Dataset/Rocafort_2024/boston/MSM", paste0("Rocafort_boston_MSM", "_gut_species_dysco.csv")), check.names = F) %>% 
+boston_msm <- read.csv(file.path("Outputs/External_Dataset/Rocafort_2024/boston/MSM", paste0("Rocafort_boston_MSM", "_gut_species_disco.csv")), check.names = F) %>% 
   arrange(desc(t)) %>% dplyr::rename(`number of correlations` = num_corr,taxa = species)
-boston_hetr <- read.csv(file.path("Outputs/External_Dataset/Rocafort_2024/boston/heterosexual", paste0("Rocafort_boston_heterosexual", "_gut_species_dysco.csv")), check.names = F) %>% 
+boston_hetr <- read.csv(file.path("Outputs/External_Dataset/Rocafort_2024/boston/heterosexual", paste0("Rocafort_boston_heterosexual", "_gut_species_disco.csv")), check.names = F) %>% 
   arrange(desc(t)) %>% dplyr::rename(`number of correlations` = num_corr,taxa = species)
-bostwana_hetr <- read.csv(file.path("Outputs/External_Dataset/Rocafort_2024/botswana/heterosexual", paste0("Rocafort_botswana_heterosexual", "_gut_species_dysco.csv")), check.names = F) %>% 
+bostwana_hetr <- read.csv(file.path("Outputs/External_Dataset/Rocafort_2024/botswana/heterosexual", paste0("Rocafort_botswana_heterosexual", "_gut_species_disco.csv")), check.names = F) %>% 
   arrange(desc(t)) %>% dplyr::rename(`number of correlations` = num_corr,taxa = species)
-uganda_hetr <- read.csv(file.path("Outputs/External_Dataset/Rocafort_2024/uganda_2/heterosexual", paste0("Rocafort_uganda_2_heterosexual", "_gut_species_dysco.csv")), check.names = F) %>%
+uganda_hetr <- read.csv(file.path("Outputs/External_Dataset/Rocafort_2024/uganda_2/heterosexual", paste0("Rocafort_uganda_2_heterosexual", "_gut_species_disco.csv")), check.names = F) %>%
   arrange(desc(t)) %>% dplyr::rename(`number of correlations` = num_corr,taxa = species)
-no_ART <- read.csv(file.path("Outputs/External_Dataset/Armstrong_2018/MSM_HIV+ART-", paste0("Armstrong_MSM_HIV+ART-", "_gut_species_dysco.csv")), check.names = F) %>% 
+no_ART <- read.csv(file.path("Outputs/External_Dataset/Armstrong_2018/MSM_HIV+ART-", paste0("Armstrong_MSM_HIV+ART-", "_gut_species_disco.csv")), check.names = F) %>% 
   arrange(desc(t)) %>% dplyr::rename(`number of correlations` = num_corr,taxa = species)
-with_ART <- read.csv(file.path("Outputs/External_Dataset/Armstrong_2018/MSM_HIV+ART", paste0("Armstrong_MSM_HIV+ART", "_gut_species_dysco.csv")), check.names = F) %>% 
+with_ART <- read.csv(file.path("Outputs/External_Dataset/Armstrong_2018/MSM_HIV+ART", paste0("Armstrong_MSM_HIV+ART", "_gut_species_disco.csv")), check.names = F) %>% 
   arrange(desc(t)) %>% dplyr::rename(`number of correlations` = num_corr,taxa = species)
 
 datasets <- c(

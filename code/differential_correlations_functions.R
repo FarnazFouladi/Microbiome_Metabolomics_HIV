@@ -30,7 +30,7 @@ get_npairs <- function(D) {
 }
 
 
-dysco_score <- function(data1, # [List] Data for group 1 
+disco_score <- function(data1, # [List] Data for group 1 
                         data2, # [List] Data for group 2
                         cooccur = 10, 
                         filt_threshold = 0.001, 
@@ -128,16 +128,16 @@ dysco_score <- function(data1, # [List] Data for group 1
 
   cat("Number of significant pairwise correlations:",dim(df_tmp_sig),"\n")
   
-  # Calculating DYSCO score
+  # Calculating disco score
   if (two_modal) {
-    dysco <- bind_rows(sapply(1:p, function(i) {
+    disco <- bind_rows(sapply(1:p, function(i) {
       p_vect <- as.vector(na.omit(pvals_tmp[(p + 1):(p + q), i]))
       t <- 1 / length(p_vect) * sum(tan((0.5 - p_vect) * pi))
       pval <- pcauchy(t, location = 0, scale = 1, lower.tail = FALSE)
       return(data.frame(species = colnames(pvals_tmp)[i], t, p = pval, num_corr = length(p_vect)))
     }, simplify = F))
   } else {
-    dysco <- bind_rows(sapply(1:p, function(i) {
+    disco <- bind_rows(sapply(1:p, function(i) {
       p_vect <- as.vector(na.omit(pvals_tmp[-i, i]))
       t <- 1 / length(p_vect) * sum(tan((0.5 - p_vect) * pi))
       pval <- pcauchy(t, location = 0, scale = 1, lower.tail = FALSE)
@@ -146,17 +146,17 @@ dysco_score <- function(data1, # [List] Data for group 1
   }
 
   # Adjustment of p-values
-  dysco <- dysco %>%
+  disco <- disco %>%
     mutate(BH_p = p.adjust(p,method = "BH")) %>%
     arrange(BH_p)
   
   # Save the results
   write.csv(df_tmp, file.path(output_dir, paste0(prefix, "_cor_diff.csv")), quote = T, row.names = F)
   write.csv(df_tmp_sig, file.path(output_dir, paste0(prefix, "_cor_diff_sig.csv")), quote = T, row.names = F)
-  write.csv(dysco, file.path(output_dir, paste0(prefix, "_dysco.csv")), quote = T, row.names = F)
+  write.csv(disco, file.path(output_dir, paste0(prefix, "_disco.csv")), quote = T, row.names = F)
   write.csv(delta_R, file.path(output_dir, paste0(prefix, "_delta_cor.csv")), quote = T, row.names = T)
   write.csv(pvals_tmp, file.path(output_dir, paste0(prefix, "_p.csv")), quote = T, row.names = T)
   write.csv(adj_pvals, file.path(output_dir, paste0(prefix, "_bh.csv")), quote = T, row.names = T)
   
-  return(list(df_tmp,df_tmp_sig, dysco, delta_R, pvals_tmp, adj_pvals))
+  return(list(df_tmp,df_tmp_sig, disco, delta_R, pvals_tmp, adj_pvals))
 }

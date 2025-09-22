@@ -5,20 +5,20 @@ input_dir <- file.path("Outputs", "Differential_Correlations","Tables")
 output_dir <- file.path("Outputs", "Differential_Correlations","Heatmaps")
 dir.create(output_dir,recursive = T,showWarnings = F)
 
-########### Heatmap for DYSCO score
+########### Heatmap for disco score
 for (sample_type in c("Gut", "Oral")) {
   if (sample_type == "Gut") {
     
     datasets <- c("gut_species","gut_go","gut_meta.p","gut_meta.n","gut_plasma.meta.p","gut_plasma.meta.n")
     list_res <- lapply(datasets, function(d){
-      read.csv(file.path(input_dir, paste0(d,"_dysco.csv")))
+      read.csv(file.path(input_dir, paste0(d,"_disco.csv")))
     })
     names(list_res) <- c("Gut Species","Gut GO","Gut MTB-POS","Gut MTB-NEG","Plasma MTB-POS","Plasma MTB-NEG")
   } else {
     
     datasets <- c("oral_species","oral_go","oral_meta.p","oral_meta.n","oral_plasma.meta.p","oral_plasma.meta.n","oral_gut_species")
     list_res <- lapply(datasets, function(d){
-      read.csv(file.path(input_dir, paste0(d,"_dysco.csv")))
+      read.csv(file.path(input_dir, paste0(d,"_disco.csv")))
     })
     names(list_res) <- c("Oral Species","Oral GO","Oral MTB-POS","Oral MTB-NEG","Plasma MTB-POS","Plasma MTB-NEG", "Gut Species")
   }

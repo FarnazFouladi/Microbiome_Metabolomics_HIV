@@ -78,7 +78,7 @@ for (hiv in c("Negative", "Positive")) {
   df.g1 <- df.g1[, common_features]
   df.g2 <- df.g2[, common_features]
   
-  species_res <- dysco_score(
+  species_res <- disco_score(
     data1 = list(df.g1), data2 = list(df.g2), 
     output_dir =output_dir ,prefix = paste0(name,"_gut_species")
   )
@@ -90,7 +90,7 @@ for (hiv in c("Negative", "Positive")) {
   go.g1 <- go.g1[, common_features]
   go.g2 <- go.g2[, common_features]
 
-  go_res <- dysco_score(
+  go_res <- disco_score(
     data1 = list(df.g1, go.g1), data2 = list(df.g2, go.g2), 
     output_dir = output_dir,prefix = paste0(name,"_gut_go")
   )
@@ -98,10 +98,10 @@ for (hiv in c("Negative", "Positive")) {
 }
 
 # Heatmap
-Fulcher_neg_species <- read.csv("Outputs/External_Dataset/Fulcher_2022/Negative/Fulcher_2022_Negative_gut_species_dysco.csv",check.names = F)
-Fulcher_neg_go <- read.csv("Outputs/External_Dataset/Fulcher_2022/Negative/Fulcher_2022_Negative_gut_go_dysco.csv",check.names = F)
-Fulcher_pos_species <- read.csv("Outputs/External_Dataset/Fulcher_2022/Positive/Fulcher_2022_Positive_gut_species_dysco.csv",check.names = F)
-Fulcher_pos_go <- read.csv("Outputs/External_Dataset/Fulcher_2022/Positive/Fulcher_2022_Positive_gut_go_dysco.csv",check.names = F)
+Fulcher_neg_species <- read.csv("Outputs/External_Dataset/Fulcher_2022/Negative/Fulcher_2022_Negative_gut_species_disco.csv",check.names = F)
+Fulcher_neg_go <- read.csv("Outputs/External_Dataset/Fulcher_2022/Negative/Fulcher_2022_Negative_gut_go_disco.csv",check.names = F)
+Fulcher_pos_species <- read.csv("Outputs/External_Dataset/Fulcher_2022/Positive/Fulcher_2022_Positive_gut_species_disco.csv",check.names = F)
+Fulcher_pos_go <- read.csv("Outputs/External_Dataset/Fulcher_2022/Positive/Fulcher_2022_Positive_gut_go_disco.csv",check.names = F)
 
 list_res <- list(Fulcher_neg_species,Fulcher_neg_go,Fulcher_pos_species,Fulcher_pos_go)
 names(list_res) <- c("Pre-HIV Gut Species","Pre-HIV Gut GO",

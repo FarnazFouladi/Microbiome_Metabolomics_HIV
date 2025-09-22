@@ -78,7 +78,7 @@ df.g2 <- df.g2[, common_features]
 
 n2 <- nrow(df.g2)
 n1 <- nrow(df.g1)
-species_res <- dysco_score(
+species_res <- disco_score(
   data1 = list(df.g1), data2 = list(df.g2),
   output_dir = output_dir,prefix = paste0(name,"_gut_species")
 )
@@ -90,14 +90,14 @@ common_features <- intersect(colnames(go.g1), colnames(go.g2))
 go.g1 <- go.g1[, common_features]
 go.g2 <- go.g2[, common_features]
 
-go_res <- dysco_score(
+go_res <- disco_score(
   data1 = list(df.g1, go.g1), data2 = list(df.g2, go.g2),
   output_dir = output_dir,prefix = paste0(name,"_gut_go")
 )
 
 # Heatmap
-Garcia_species <- read.csv("Outputs/External_Dataset/Garcia_2024/Garcia_2024_gut_species_dysco.csv",check.names = F)
-Garcia_go <- read.csv("Outputs/External_Dataset/Garcia_2024/Garcia_2024_gut_go_dysco.csv",check.names = F)
+Garcia_species <- read.csv("Outputs/External_Dataset/Garcia_2024/Garcia_2024_gut_species_disco.csv",check.names = F)
+Garcia_go <- read.csv("Outputs/External_Dataset/Garcia_2024/Garcia_2024_gut_go_disco.csv",check.names = F)
 
 list_res <- list(Garcia_species,Garcia_go)
 names(list_res) <- c("Post-HIV Gut Species","Post-HIV Gut GO")

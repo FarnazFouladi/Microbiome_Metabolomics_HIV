@@ -32,7 +32,7 @@ res_sc <- foreach(i = 1:B, .verbose = T, .packages = c("tidyverse")) %dorng% {
   df.nc1 <- df.nc[sample(1:nrow(df.nc), nrow(df.nc), replace = T), ]
   df.sc2 <- df.sc[sample(1:nrow(df.sc), nrow(df.sc), replace = T), ]
 
-  species_res <- dysco_score(
+  species_res <- disco_score(
     data1 = list(df.nc1), data2 = list(df.sc2),
     output_dir = output_dir, prefix = "gut_species"
   )[[3]]
@@ -67,7 +67,7 @@ res_pool <- foreach(i = 1:B, .verbose = T, .packages = c("tidyverse")) %dorng% {
   df.nc1 <- df.pooled[sample(1:nrow(df.pooled), nrow(df.nc), replace = T), ]
   df.sc2 <- df.pooled[sample(1:nrow(df.pooled), nrow(df.sc), replace = T), ]
 
-  species_res <- dysco_score(
+  species_res <- disco_score(
     data1 = list(df.nc1), data2 = list(df.sc2),
     output_dir = output_dir, prefix = "gut_species"
   )[[3]]

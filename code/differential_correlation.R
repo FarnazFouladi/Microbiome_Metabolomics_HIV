@@ -15,7 +15,7 @@ common_features <- intersect(colnames(df.nc), colnames(df.sc))
 common_features <- common_features[!grepl("s__sp.", common_features)]
 df.nc <- df.nc[, common_features]
 df.sc <- df.sc[, common_features]
-species_res <- dysco_score(
+species_res <- disco_score(
   data1 = list(df.nc), data2 = list(df.sc),
   output_dir = output_dir, prefix = "gut_species"
 )
@@ -31,7 +31,7 @@ go.sc <- t(sc_bias_corrected[[2]])
 common_features <- intersect(colnames(go.nc), colnames(go.sc))
 go.nc <- go.nc[, common_features]
 go.sc <- go.sc[, common_features]
-go_res <- dysco_score(
+go_res <- disco_score(
   data1 = list(df.nc, go.nc), data2 = list(df.sc, go.sc),
   output_dir = output_dir, prefix = "gut_go"
 )
@@ -50,7 +50,7 @@ meta.p.sc <- t(sc_bias_corrected[[3]])
 common_features <- intersect(colnames(meta.p.nc), colnames(meta.p.sc))
 meta.p.nc <- meta.p.nc[, common_features]
 meta.p.sc <- meta.p.sc[, common_features]
-meta.p_res <- dysco_score(
+meta.p_res <- disco_score(
   data1 = list(df.nc, meta.p.nc), data2 = list(df.sc, meta.p.sc),
   output_dir = output_dir, prefix = "gut_meta.p"
 )
@@ -65,7 +65,7 @@ meta.n.sc <- t(sc_bias_corrected[[4]])
 common_features <- intersect(colnames(meta.n.nc), colnames(meta.n.sc))
 meta.n.nc <- meta.n.nc[, common_features]
 meta.n.sc <- meta.n.sc[, common_features]
-meta.n_res <- dysco_score(
+meta.n_res <- disco_score(
   data1 = list(df.nc, meta.n.nc), data2 = list(df.sc, meta.n.sc),
   output_dir = output_dir, prefix = "gut_meta.n"
 )
@@ -78,7 +78,7 @@ meta.plasma.p.sc <- t(sc_bias_corrected[[5]])
 common_features <- intersect(colnames(meta.plasma.p.nc), colnames(meta.plasma.p.sc))
 meta.plasma.p.nc <- meta.plasma.p.nc[, common_features]
 meta.plasma.p.sc <- meta.plasma.p.sc[, common_features]
-meta.plasma.p_res <- dysco_score(
+meta.plasma.p_res <- disco_score(
   data1 = list(df.nc, meta.plasma.p.nc), data2 = list(df.sc, meta.plasma.p.sc),
   output_dir = output_dir, prefix = "gut_plasma.meta.p"
 )
@@ -92,7 +92,7 @@ meta.plasma.n.sc <- t(sc_bias_corrected[[6]])
 common_features <- intersect(colnames(meta.plasma.n.nc), colnames(meta.plasma.n.sc))
 meta.plasma.n.nc <- meta.plasma.n.nc[, common_features]
 meta.plasma.n.sc <- meta.plasma.n.sc[, common_features]
-meta.plasma.n_res <- dysco_score(
+meta.plasma.n_res <- disco_score(
   data1 = list(df.nc, meta.plasma.n.nc), data2 = list(df.sc, meta.plasma.n.sc),
   output_dir = output_dir, prefix = "gut_plasma.meta.n"
 )
@@ -106,7 +106,7 @@ common_features <- intersect(colnames(df.nc.oral), colnames(df.sc.oral))
 common_features <- common_features[!grepl("s__sp.", common_features)]
 df.nc.oral <- df.nc.oral[, common_features]
 df.sc.oral <- df.sc.oral[, common_features]
-oral_species_res <- dysco_score(
+oral_species_res <- disco_score(
   data1 = list(df.nc.oral),
   data2 = list(df.sc.oral),
   output_dir = output_dir, prefix = "oral_species"
@@ -124,7 +124,7 @@ go.sc.oral <- t(sc_bias_corrected[[8]])
 common_features <- intersect(colnames(go.nc.oral), colnames(go.sc.oral))
 go.nc.oral <- go.nc.oral[, common_features]
 go.sc.oral <- go.sc.oral[, common_features]
-go_res_oral <- dysco_score(
+go_res_oral <- disco_score(
   data1 = list(df.nc.oral, go.nc.oral),
   data2 = list(df.sc.oral, go.sc.oral),
   output_dir = output_dir, prefix = "oral_go"
@@ -138,7 +138,7 @@ meta.p.sc.oral <- t(sc_bias_corrected[[9]])
 common_features <- intersect(colnames(meta.p.nc.oral), colnames(meta.p.sc.oral))
 meta.p.nc.oral <- meta.p.nc.oral[, common_features]
 meta.p.sc.oral <- meta.p.sc.oral[, common_features]
-meta.p_oral <- dysco_score(
+meta.p_oral <- disco_score(
   data1 = list(df.nc.oral, meta.p.nc.oral),
   data2 = list(df.sc.oral, meta.p.sc.oral),
   output_dir = output_dir, prefix = "oral_meta.p"
@@ -152,7 +152,7 @@ meta.n.sc.oral <- t(sc_bias_corrected[[10]])
 common_features <- intersect(colnames(meta.n.nc.oral), colnames(meta.n.sc.oral))
 meta.n.nc.oral <- meta.n.nc.oral[, common_features]
 meta.n.sc.oral <- meta.n.sc.oral[, common_features]
-meta.n_oral <- dysco_score(
+meta.n_oral <- disco_score(
   data1 = list(df.nc.oral, meta.n.nc.oral),
   data2 = list(df.sc.oral, meta.n.sc.oral),
   output_dir = output_dir, prefix = "oral_meta.n"
@@ -161,7 +161,7 @@ write.csv(meta.n_oral[[1]] %>% left_join(mtb_ann), file.path(output_dir, "oral_m
 write.csv(meta.n_oral[[2]] %>% left_join(mtb_ann), file.path(output_dir, "oral_meta.n_cor_diff_sig.csv"), quote = T, row.names = F)
 
 # Plasma Metabolites - Positive mode
-meta.plasma.p_res.oral <- dysco_score(
+meta.plasma.p_res.oral <- disco_score(
   data1 = list(df.nc.oral, meta.plasma.p.nc),
   data2 = list(df.sc.oral, meta.plasma.p.sc),
   output_dir = output_dir, prefix = "oral_plasma.meta.p"
@@ -170,7 +170,7 @@ write.csv(meta.plasma.p_res.oral[[1]] %>% left_join(mtb_ann), file.path(output_d
 write.csv(meta.plasma.p_res.oral[[2]] %>% left_join(mtb_ann), file.path(output_dir, "oral_plasma.meta.p_cor_diff_sig.csv"), quote = T, row.names = F)
 
 # Plasma Metabolites - Negative mode
-meta.plasma.n_res.oral <- dysco_score(
+meta.plasma.n_res.oral <- disco_score(
   data1 = list(df.nc.oral, meta.plasma.n.nc),
   data2 = list(df.sc.oral, meta.plasma.n.sc),
   output_dir = output_dir, prefix = "oral_plasma.meta.n"
@@ -182,7 +182,7 @@ write.csv(meta.plasma.n_res.oral[[2]] %>% left_join(mtb_ann), file.path(output_d
 colnames(df.nc) <- paste0("gut_", colnames(df.nc))
 colnames(df.sc) <- paste0("gut_", colnames(df.sc))
 
-gut.oral <- dysco_score(
+gut.oral <- disco_score(
   data1 = list(df.nc.oral, df.nc), data2 = list(df.sc.oral, df.sc),
   output_dir = output_dir, prefix = "oral_gut_species"
 )

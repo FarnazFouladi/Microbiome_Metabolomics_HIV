@@ -60,7 +60,7 @@ source("code/process_data.R")
 # Differential correlation analysis
 source("code/differential_correlation.R")
 # DISCO
-system("Rscript code/dysco_heatmap.R") 
+system("Rscript code/disco_heatmap.R") 
 # Subnetworks
 system("Rscript code/subset_networks_gut.R")
 system("Rscript code/subset_networks_oral.R")
@@ -76,15 +76,15 @@ system("Rscript code/correlation_trend_heatmap.R")
 #External datasets
 ##############################################
 source("code/external_data_Fulcher_2022_preprocess.R")
-source("code/external_data_Fulcher_2022_dysco.R")
+source("code/external_data_Fulcher_2022_disco.R")
 
 source("code/external_data_Garcia_2024_preprocs.R")
-source("code/external_data_Garcia_2024_dysco.R")
+source("code/external_data_Garcia_2024_disco.R")
 
-source("code/external_data_Rocafort_2024_dysco.R")
+source("code/external_data_Rocafort_2024_disco.R")
 source("code/external_data_Armstrong_2018.R")
 
-source("code/dysco_heatmap_across_studies.R")
+source("code/disco_heatmap_across_studies.R")
 
 ##############################################
 #DISCO validation

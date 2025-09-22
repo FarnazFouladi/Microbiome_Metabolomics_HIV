@@ -109,15 +109,15 @@ for (group in groups) {
   df.g1 <- df.g1[, common_features]
   df.g2 <- df.g2[, common_features]
 
-  species_res <- dysco_score(
+  species_res <- disco_score(
     data1 = list(df.g1), data2 = list(df.g2),
     output_dir = subdir, prefix = paste0(name, "_gut_species")
   )
 }
 
 # Heatmap
-no_ART <- read.csv(file.path("Outputs/External_Dataset/Armstrong_2018/MSM_HIV+ART-", paste0("Armstrong_MSM_HIV+ART-", "_gut_species_dysco.csv")), check.names = F)
-with_ART <- read.csv(file.path("Outputs/External_Dataset/Armstrong_2018/MSM_HIV+ART", paste0("Armstrong_MSM_HIV+ART", "_gut_species_dysco.csv")), check.names = F)
+no_ART <- read.csv(file.path("Outputs/External_Dataset/Armstrong_2018/MSM_HIV+ART-", paste0("Armstrong_MSM_HIV+ART-", "_gut_species_disco.csv")), check.names = F)
+with_ART <- read.csv(file.path("Outputs/External_Dataset/Armstrong_2018/MSM_HIV+ART", paste0("Armstrong_MSM_HIV+ART", "_gut_species_disco.csv")), check.names = F)
 
 res_list <- list(no_ART, with_ART)
 names(res_list) <- c("ART-naïve", "ART-treated")
