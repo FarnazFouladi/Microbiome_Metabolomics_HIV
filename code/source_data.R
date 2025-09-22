@@ -20,7 +20,7 @@ fig1f <- read.table("Outputs/Differential_Abundance_SCFA/Plasma_source_data.txt"
                     sep="\t",header = T, check.names = F, quote = "",comment.char ="") 
 
 # Figure 2:
-fig2 <- xlsx::read.xlsx(file.path( "Supplementary_Tables", "Supplementary_Table3.xlsx"),sheetIndex = 1)
+fig2 <- xlsx::read.xlsx(file.path( "Outputs/Diablo/Gut", "Supplementary_Table3.xlsx"),sheetIndex = 1)
 fig2 <- fig2 %>% filter(abs(coefficient) >=0.8)
 
 # Figure 3:

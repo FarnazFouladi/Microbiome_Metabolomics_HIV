@@ -61,7 +61,7 @@ features <- c("GO:0004641","GO:0004088")
 sig_diff_f <- sig_diff %>% filter(t2 %in% features) %>% arrange(t2)
 # Save source data
 write.table(sig_diff_f %>% mutate(cor_diff = r2 - r1) %>%
-              select(c("Description","t1","cor_diff","p","BH_p")),
+              select(c("t2","Description","t1","cor_diff","p","BH_p")),
             file = file.path(sub_dir,"go_source_data.txt"),sep = "\t", row.names = F, quote = F)
 
 annotation_go <- sig_diff_f %>% select(c("t2","Description")) %>% distinct()
