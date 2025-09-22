@@ -105,6 +105,6 @@ create_heatmap <- function(list_res, p_alpha = 0.01, bh_alpha = 0.1, top_n, min_
 
  
   pdf(file.path(output_dir, paste0(sample_type, "_disco_heatmap_top.pdf")), 33, 50)
-  draw(hm, heatmap_legend_side = "left")
+  draw(hm, heatmap_legend_side = "right")
   dev.off()
 }
